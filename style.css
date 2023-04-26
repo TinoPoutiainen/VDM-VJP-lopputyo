@@ -1,0 +1,33 @@
+html{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    background-color: antiquewhite;
+   
+}
+
+.main-view{
+    display: flex;
+    align-self: center;
+    width: 60vw;
+    min-height: 200vh;
+    background-color: brown;
+}
+.margin{
+    display: flex;
+    justify-content: center;
+    min-height: 200vh;
+    width: 20vw ;
+}
+.logo{
+    height: 50px;
+    width: 50px;
+    background-color: aqua;
+    margin-top: 2rem;
+}
