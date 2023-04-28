@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="quiz.css">
     <script src="main.js" defer></script>
+    <script src="quiz.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Syne&display=swap" rel="stylesheet">
 </head>
 <header>
  
@@ -29,13 +32,16 @@
 
 
         <section id="video-container">
+            
             <video class="video" id="main-video" poster="pictures/poster.png">
                 <source src="videos/VJP-VDM video.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
+            
+            
     
             <button id="pause-play" onclick="pauseVideo()">
-                TOISTA
+                Toista
             </button>
     
         </section>
@@ -48,9 +54,24 @@
                 inventore repellendus assumenda deserunt nihil architecto 
                 pariatur tenetur vitae, corporis, possimus dolor.
             </p>
+        </section>
 
-
-
+        <section class="quiz">
+            <div id="question-container">
+                <h2 id="question"></h2>
+                <div id="answer-buttons">
+                </div>
+            </div>
+            <div id="controls-container">
+                <button id="previous-button" class="control-button" disabled>Edellinen</button>
+                <button id="next-button" class="control-button">Seuraava</button>
+            </div>
+            <div id="result-container" style="display: none;">
+                <p id="result"></p>
+            </div>
+            <div>
+                <button id="retake-button" style="display: none;">Tee testi uudelleen</button>
+            </div>
 
         </section>
 

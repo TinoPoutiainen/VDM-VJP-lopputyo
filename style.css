@@ -83,14 +83,32 @@ button{
     display: flex;
     flex-direction: column;
     align-self: center;
-    max-width: 98%;
+    max-width: 90%;
+    
+    
     
 
+}
+
+.video{
+    padding: 20px;
+    border-width: 4px;
+    border-style: dashed;
+    border-radius: 10px;
+    border-color: bisque;
+    
+    
+    
 }
 #pause-play{
     width: 4rem;
     align-self:flex-end;
     margin: 1vw;
+    border: solid;
+    background-color: transparent;
+    min-width: 8vw;
+    min-height: 2vw;
+    font-size: large;
 }
 .legend{
     display: flex;
@@ -98,9 +116,13 @@ button{
 
     
 }
+
+
 #about{
     max-width: 50%;
     color: white;
     font-size: 1.5rem;
+   
+    font-family: Inter;
     padding-left: 1rem;
 }

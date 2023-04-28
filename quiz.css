@@ -1,0 +1,48 @@
+.quiz{
+    display: flex;
+    flex-direction: column;
+    
+}
+#question-container{
+    display: flex;
+    flex-direction: column;
+
+}
+#question{
+    align-self: center;
+    font-size: larger;
+    color: white;
+    border-style: dashed;
+    padding: 10px;
+
+}
+#answer-buttons{
+    display: flex;
+    flex-direction: column;
+    min-width: 50%;
+    
+    align-self: center;
+}
+.answer-button{
+    background-color: transparent;
+    font-size: large;
+    border-style: solid;
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.answer-button:hover{
+    background-color: goldenrod;
+}
+#controls-container{
+    display: flex;
+    align-self: center;
+
+}
+.control-button{
+    background-color: transparent;
+    font-size: large;
+    border-style: solid;
+}
