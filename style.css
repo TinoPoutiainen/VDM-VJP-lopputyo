@@ -8,16 +8,18 @@ body{
     display: flex;
     flex-direction: row;
     margin: 0;
-    background-color: antiquewhite;
+    background-color: rgb(201, 154, 93);
    
 }
 
 .main-view{
     display: flex;
-    align-self: center;
+    flex-direction: column;
+   
+
     width: 60vw;
     min-height: 200vh;
-    background-color: brown;
+    background-color: rgb(218, 190, 66);
 }
 .margin{
     display: flex;
@@ -25,9 +27,80 @@ body{
     min-height: 200vh;
     width: 20vw ;
 }
+#left{
+
+}
 .logo{
     height: 50px;
     width: 50px;
     background-color: aqua;
     margin-top: 2rem;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+
+    justify-content: center;
+    justify-content: space-between;
+
+    justify-content: baseline;
+    align-items: baseline;
+    width: 100%;
+    
+    
+}
+.main-title{
+    color: white;
+    font-size: 2.5rem;
+   padding-left: 1rem;
+   white-space: nowrap;
+   overflow: hidden;
+    
+}
+.menu-buttons{
+    display: flex;
+    justify-content: space-around;
+    justify-self: flex-end;
+    padding-right: 5rem;
+    
+}
+button{
+    color: white;
+}
+.menu-button{
+   height: 2rem;
+    width: 4rem;
+
+    font-size: 1.1rem;
+  
+    border: none;
+    background-color: transparent;
+
+
+}
+#video-container{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    max-width: 98%;
+    
+
+}
+#pause-play{
+    width: 4rem;
+    align-self:flex-end;
+    margin: 1vw;
+}
+.legend{
+    display: flex;
+    flex-direction: row;
+
+    
+}
+#about{
+    max-width: 50%;
+    color: white;
+    font-size: 1.5rem;
+    padding-left: 1rem;
 }
