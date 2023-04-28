@@ -12,27 +12,42 @@
  
 </header>
 <body>
-    <section class="margin">
+    <section class="margin" id="left">
         <div class="logo"></div>
     </section>
 
     <section class="main-view">
+
         <section class="menu">
             <h1 class="main-title">#HARKITTUFITTI</h1>
             <div class="menu-buttons">
-                <button class="menu-button" id="vinkit"></button>
-                <button class="menu-button" id="meistä"></button>
-                
+                <button class="menu-button" id="vinkit">VINKIT</button>
+                <button class="menu-button" id="meistä">MEISTÄ</button>
+                <button class="menu-button" id="lisää">LISÄÄ</button>
             </div>
-
         </section>
 
 
-        <div class="video"></div>
+        <section id="video-container">
+            <video class="video" id="main-video" poster="pictures/poster.png">
+                <source src="videos/VJP-VDM video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+    
+            <button id="pause-play" onclick="pauseVideo()">
+                TOISTA
+            </button>
+    
+        </section>
 
 
 
-        <section class="tips-view">
+        <section class="legend">
+            <p id="about">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Ut enim omnis cum aperiam placeat at ullam obcaecati impedit 
+                inventore repellendus assumenda deserunt nihil architecto 
+                pariatur tenetur vitae, corporis, possimus dolor.
+            </p>
 
 
 
@@ -50,7 +65,7 @@
 
     </section>
 
-    <section class="margin"></section>
+    <section class="margin" id="right"></section>
 
     
 </body>
