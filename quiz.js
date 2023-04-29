@@ -29,14 +29,11 @@ var currentScore = 0;
 //elementit
 var questionElement = document.getElementById("question");
 var answerButtonsElement = document.getElementById("answer-buttons");
-var previousButton = document.getElementById("previous-button");
-var nextButton = document.getElementById("next-button");
 var resultContainer = document.getElementById("result-container");
 var resultElement = document.getElementById("result");
 var retakeButton = document.getElementById("retake-button")
 
-nextButton.addEventListener("click", showNextQuestion);
-previousButton.addEventListener("click", showPreviousQuestion);
+
 retakeButton.addEventListener("click", resetQuiz);
 
 showQuestion(currentQuestionIndex);
@@ -57,7 +54,7 @@ function showQuestion(questionIndex) {
 		button.addEventListener("click", selectAnswer);
 		answerButtonsElement.appendChild(button);
 	}
-	updateControls();
+	
 }
 // renderöi seuraava kysymys tai tulos
 function showNextQuestion() {
@@ -69,10 +66,7 @@ function showNextQuestion() {
 	}
 }
 
-function showPreviousQuestion() {
-	currentQuestionIndex--;
-	showQuestion(currentQuestionIndex);
-}
+
 // ottaa parametriksi vastauksen klikkauksen ja päivittää scorea sen sisältämällä arvolla
 function selectAnswer(e) {
 	var selectedButton = e.target;
@@ -81,25 +75,11 @@ function selectAnswer(e) {
 	showNextQuestion();
 }
 
-// päivittää seuraava-edellinen -nappien tilaa
-function updateControls() {
-	if (currentQuestionIndex === 0) {
-		previousButton.disabled = true;
-	} else {
-		previousButton.disabled = false;
-	}
-	if (currentQuestionIndex === questions.length - 1) {
-		nextButton.innerText = "Päätä testi";
-	} else {
-		nextButton.innerText = "Seuraava";
-	}
-}
 // resetoi quizin
 function resetQuiz(){
     questionElement.style.display = "flex";
 	answerButtonsElement.style.display = "flex";
-	previousButton.style.display = "inline";
-	nextButton.style.display = "inline";
+	
 	resultContainer.style.display = "none";
     retakeButton.style.display = "none";
 
@@ -113,8 +93,7 @@ function resetQuiz(){
 function showResult() {
 	questionElement.style.display = "none";
 	answerButtonsElement.style.display = "none";
-	previousButton.style.display = "none";
-	nextButton.style.display = "none";
+	
 	resultContainer.style.display = "block";
     retakeButton.style.display = "inline";
 
