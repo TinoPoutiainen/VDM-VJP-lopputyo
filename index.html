@@ -15,80 +15,95 @@
  
 </header>
 <body>
-    <section class="margin" id="left">
-        <div class="logo"></div>
+    <section class="initial-view">
+        <div class="main-image" title="main-image"></div>
+
+        <div class="title-background">
+            <h1 id="main-title">KÄYTÄ LUOVUUTTA</h1>
+            <h4 id="sub-title">ÄLÄ RAHAA</h4>
+        </div>
+
+
+
     </section>
 
-    <section class="main-view">
 
-        <section class="menu">
-            <h1 class="main-title">#HARKITTUFITTI</h1>
-            <div class="menu-buttons">
-                <button class="menu-button" id="vinkit">VINKIT</button>
-                <button class="menu-button" id="meistä">MEISTÄ</button>
-                <button class="menu-button" id="lisää">LISÄÄ</button>
-            </div>
+
+    <section class="content">
+        <section class="margin" id="left">
+            <div class="logo"></div>
         </section>
 
+        <section class="main-view">
 
-        <section id="video-container">
-            
-            <video class="video" id="main-video" poster="pictures/poster.png">
-                <source src="videos/VJP-VDM video.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            
-            
-    
-            <button id="pause-play" onclick="pauseVideo()">
-                Toista
-            </button>
-    
-        </section>
-
-
-
-        <section class="legend">
-            <p id="about">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                Ut enim omnis cum aperiam placeat at ullam obcaecati impedit 
-                inventore repellendus assumenda deserunt nihil architecto 
-                pariatur tenetur vitae, corporis, possimus dolor.
-            </p>
-        </section>
-
-        <section class="quiz">
-            <div id="question-container">
-                <h2 id="question"></h2>
-                <div id="answer-buttons">
+            <section class="menu">
+                <h1 class="main-title">#HARKITTUFITTI</h1>
+                <div class="menu-buttons">
+                    <button class="menu-button" id="vinkit">VINKIT</button>
+                    <button class="menu-button" id="meistä">MEISTÄ</button>
+                    <button class="menu-button" id="lisää">LISÄÄ</button>
                 </div>
-            </div>
-            <div id="controls-container">
-                <button id="previous-button" class="control-button" disabled>Edellinen</button>
-                <button id="next-button" class="control-button">Seuraava</button>
-            </div>
-            <div id="result-container" style="display: none;">
-                <p id="result"></p>
-            </div>
-            <div>
-                <button id="retake-button" style="display: none;">Tee testi uudelleen</button>
-            </div>
+            </section>
+
+
+            <section id="video-container">
+                
+                <video class="video" id="main-video" controls poster="pictures/poster.png">
+                    <source src="videos/VJP-VDM video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                
+                
+        
+                <button id="pause-play" onclick="pauseVideo()">
+                    Toista
+                </button>
+        
+            </section>
+
+
+
+            <section class="legend">
+                <p id="about">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Ut enim omnis cum aperiam placeat at ullam obcaecati impedit 
+                    inventore repellendus assumenda deserunt nihil architecto 
+                    pariatur tenetur vitae, corporis, possimus dolor.
+                </p>
+            </section>
+
+            <section class="quiz">
+                <div id="question-container">
+                    <h2 id="question"></h2>
+                    <div id="answer-buttons">
+                    </div>
+                </div>
+                <!-- <div id="controls-container">
+                    <button id="previous-button" class="control-button" disabled>Edellinen</button>
+                    <button id="next-button" class="control-button">Seuraava</button>
+                </div> -->
+                <div id="result-container" style="display: none;">
+                    <p id="result"></p>
+                </div>
+                <div>
+                    <button id="retake-button" style="display: none;">Tee testi uudelleen</button>
+                </div>
+
+            </section>
+
+
+
+
+
+
+
+
+
 
         </section>
 
-
-
-
-
-
-
-
-
+        <section class="margin" id="right"></section>
 
     </section>
-
-    <section class="margin" id="right"></section>
-
-    
 </body>
 <footer>
 
