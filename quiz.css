@@ -1,7 +1,13 @@
+
 .quiz{
     display: flex;
     flex-direction: column;
     
+}
+#quiz-intro{
+    align-self: center;
+    font-family: Inter;
+    color:  #5E5958 ;
 }
 #question-container{
     display: flex;
@@ -18,22 +24,27 @@
 #question{
     align-self: center;
     font-size: larger;
-    color: white;
-    border-style: dashed;
+    color:  #5E5958;
+    border: 2px dashed #5E5958 ;
+    border-radius: 10px;
     padding: 10px;
+    max-width: 80% ;
+    
 
 }
 #answer-buttons{
     display: flex;
     flex-direction: column;
-    min-width: 50%;
+    min-width: 70%;
     
     align-self: center;
 }
 .answer-button{
     background-color: transparent;
     font-size: large;
-    border-style: solid;
+    
+    border: 2px dashed #5E5958 ;
+    border-radius: 10px;
     
     padding-top: 10px;
     padding-bottom: 10px;
@@ -59,9 +70,4 @@
     display: flex;
     align-self: center;
 
-}
-.control-button{
-    background-color: transparent;
-    font-size: large;
-    border-style: solid;
 }
