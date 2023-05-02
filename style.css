@@ -6,17 +6,19 @@ html{
 body{
     display: flex;
     flex-direction: column;
+    min-width: 200px;
+    max-width: 2500px;
+    min-height: 100vh;
     margin: 0;
 }
-.main-view{
-    display: flex;
-    position: relative;
-    width: 100vw;
+.initial-view{
+    
     height: 100vh;
+    width: 100vw;
 }
 .main-image{
-    position: absolute;
     
+    position: relative;
     background-image:  url("pictures/vdm-header-pic.png");
     background-attachment: fixed;   
     background-position: 50%;
@@ -26,68 +28,124 @@ body{
     background-size: cover;
     z-index: 0;
     margin: 0%;
+    filter: brightness(80%);
+    
     
 }
-.title-background{
+#border{
     position: absolute;
-    text-align: center;
+    transform: translate3d(-50%, -50%, 0);
+    width: 98%;
+    height: 98%;
+    top: 50%;
+    left: 50%;
+    border: 5px dashed #eee472;
+
+
+}
+.title-background{
     display: flex;
     flex-direction: column;
-    
-    font-size: 4rem;
-   
-    
-    height: 10vw;
-    width: 40vw;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+
+    height: 15rem;
+    width: 40rem;
+
     color: white;
-    top:50%;
-    left: 20%;
+
+    top: 50%;
+    left: 30%;
+
     transform: translate3d(-50%, -50%, 0);
+    
+    margin-left: 1vw;
+    margin-right: 1vw;
+    
+    
     
 }
 #main-title{
-    position: absolute;
-    font-family: "Inter";
-    letter-spacing: 1vw;
-    font-size: 2rem;
+    
+    font-family: 'Bowlby One SC';
+    font-size: 3rem;
     white-space:nowrap;
-    top: 10%;
-    left: 50%;
-    transform: translate3d(-50%, -50%, 0);
+    margin: 0;
+   
+   
+   
 }
 #sub-title{
-    position: absolute;
-    font-family: "Inter";
+    
+    font-family: 'Bowlby One SC';
     white-space:nowrap;
-    font-size: 3rem;
-    top:    50%;
+    font-size: 4rem;
+    margin-top: 0;
+   
+   
+}
+#name{
+    
+    font-family: 'Bowlby One SC';
+    color: #eee472;
+    font-size: 2.5rem;
+    margin-top: 5vw;
+   
+    
+
+}
+.arrow{
+    
+    position: absolute;
+    bottom: 0%;
     left: 50%;
-    transform: translate3d(-50%, -50%, 0);
+    height: 40px;
+    width: 50px;
+   
+    
+    background: url("/pictures/arrow.png");
+    background-repeat: no-repeat;
+    border: none;
+    background-size: contain;
+    opacity: 50%;
+   
+    animation: arrowAnimation ease 2s;
+    
+    
+}
+@keyframes arrowAnimation {
+    
+    0% {
+       
+        opacity: 0;
+    }
+    100% {
+       
+        opacity: 0.5;
+     }
 }
 
 
 
 
-
-
+.main-view{
+    display: flex;
+    position: relative;
+    min-width: 400px;
+    height: 100vh;
+}
 
 .content{
     display: flex;
     flex-direction: row;
-    margin-top: 100vh;
+ 
     background-color: #C8B3A7;
 
    
    
 }
-@keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-     }
-}
+
 
 .main-view{
     display: flex;
@@ -108,47 +166,36 @@ body{
 #left{
 
 }
-.logo{
-    height: 50px;
-    width: 50px;
-    background-color: aqua;
-    margin-top: 2rem;
-}
-.menu{
+
+
+
+.menu-buttons{
+    
     display: flex;
     flex-direction: row;
-    align-items: baseline;
-
     justify-content: center;
-    justify-content: space-between;
-
-    justify-content: baseline;
-    align-items: baseline;
+    
     width: 100%;
     
-    
-}
-.main-title{
-    color: #5E5958;
-    font-size: 2.5rem;
-   padding-left: 1rem;
-   white-space: nowrap;
-   overflow: hidden;
-    
-}
-.menu-buttons{
-    display: flex;
-    justify-content: space-around;
-    justify-self: flex-end;
-    padding-right: 5rem;
+   
+  
     
 }
 button{
     color: #5E5958;
+    font-family: Inter;
+    font-weight: 700;
+    margin: 1rem;
+    
+    
+}
+button:hover{
+    border: 2px dashed #5E5958 ;
+    border-radius: 6px;
 }
 .menu-button{
-   height: 2rem;
-    width: 4rem;
+    height: 2rem;
+    width: 8rem;
 
     font-size: 1.1rem;
   
@@ -170,7 +217,7 @@ button{
 
 .video{
     padding: 20px;
-    border-width: 4px;
+    border-width: 2px;
     border-style: dashed;
     border-radius: 10px;
     border-color: #5E5958;
@@ -179,14 +226,15 @@ button{
     
 }
 #pause-play{
-    width: 4rem;
-    align-self:flex-end;
+   
+    align-self: flex-end;
     margin: 1vw;
-    border: solid;
+    
+    font-size: 1rem;
+  
+    border: none;
     background-color: transparent;
-    min-width: 8vw;
-    min-height: 2vw;
-    font-size: large;
+    
 }
 .legend{
     display: flex;
@@ -209,4 +257,38 @@ button{
     padding-top: 20px ;
     border-top: 4px dashed #5E5958;
    
+}
+
+
+@media (max-width:1000px) {
+    
+    .main-image{
+        position: absolute;
+        background-attachment: fixed;   
+        background-position: 20%;
+     
+      
+      
+        
+    }
+    .title-background{
+        top:35%;
+        left: 50%;
+      
+        
+    }
+    #main-title{
+        
+        letter-spacing: 1vw;
+        font-size: 2rem;
+  
+     
+       
+        
+    }
+    #sub-title{
+       
+        font-size: 3rem;
+        
+    }
 }

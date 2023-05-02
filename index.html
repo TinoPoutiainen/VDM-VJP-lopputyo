@@ -9,41 +9,42 @@
     <link rel="stylesheet" href="quiz.css">
     <script src="main.js" defer></script>
     <script src="quiz.js" defer></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Syne&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Inter:wght@700&family=Syne&family=Rubik+Mono+One&family=Koulen&display=swap" rel="stylesheet">
 </head>
 <header>
  
 </header>
 <body>
     <section class="initial-view">
-        <div class="main-image" title="main-image"></div>
+        <div class="main-image" title="main-image" alt="bag-img">
+            <div id="border"></div>
+        </div>
 
         <div class="title-background">
             <h1 id="main-title">KÄYTÄ LUOVUUTTA</h1>
             <h4 id="sub-title">ÄLÄ RAHAA</h4>
+            <h4 id="name">#HARKITTUFITTI</h4>
         </div>
-
-
-
+       
+        <div class="arrow"> </div>
     </section>
 
 
 
     <section class="content">
         <section class="margin" id="left">
-            <div class="logo"></div>
+            
         </section>
 
         <section class="main-view">
 
-            <section class="menu">
-                <h1 class="main-title">#HARKITTUFITTI</h1>
-                <div class="menu-buttons">
-                    <button class="menu-button" id="vinkit">VINKIT</button>
-                    <button class="menu-button" id="meistä">MEISTÄ</button>
-                    <button class="menu-button" id="lisää">LISÄÄ</button>
-                </div>
-            </section>
+           
+            <div class="menu-buttons">
+                <button class="menu-button" id="vinkit">VINKIT</button>
+                <button class="menu-button" id="meistä">MEISTÄ</button>
+                <button class="menu-button" id="lisää">LISÄÄ</button>
+            </div>
+           
 
 
             <section id="video-container">
@@ -56,7 +57,7 @@
                 
         
                 <button id="pause-play" onclick="pauseVideo()">
-                    Toista
+                    TOISTA
                 </button>
         
             </section>
@@ -89,21 +90,13 @@
                 </div>
 
             </section>
-
-
-
-
-
-
-
-
-
-
         </section>
-
         <section class="margin" id="right"></section>
-
     </section>
+
+    <section class="content-mobile"></section>
+
+
 </body>
 <footer>
 
