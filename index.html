@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="quiz.css">
     <script src="main.js" defer></script>
     <script src="quiz.js" defer></script>
-    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Inter:wght@700&family=Syne&family=Rubik+Mono+One&family=Koulen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=League+Spartan:wght@800&family=Inter:wght@700&family=Syne&family=Rubik+Mono+One&family=Koulen&display=swap" rel="stylesheet">
 </head>
 <header>
  
@@ -42,7 +42,6 @@
             <div class="menu-buttons">
                 <button class="menu-button" id="vinkit">VINKIT</button>
                 <button class="menu-button" id="meistä">MEISTÄ</button>
-                <button class="menu-button" id="lisää">LISÄÄ</button>
                 <button class="menu-button" id="testi">TEE TESTI</button>
             </div>
            
@@ -71,19 +70,39 @@
                     inventore repellendus assumenda deserunt nihil architecto 
                     pariatur tenetur vitae, corporis, possimus dolor.
                 </p>
+            </section>
+
+            <section>
                 <div class="text-menu">
-                    <div class="container" id="watch-video">
-                        <p >Katso Aalto-Yliopiston professorin vinkit pikamuodin välttämiseen</p>
-                    </div>
-                    <div class="container" id="go-to-quiz">
-                        <p >Testaa millainen muodin kuluttaja olet</p>
-                    </div>
-                    <div class="container" id="go-to-tips">
-                        <p >Selaa tyylivinkkejä ja inspiroidu</p>
-                    </div>
-                    
+
+                    <button class="container" id="watch-video" onclick="window.location.href='tips.html';">
+                        
+                        <span class="bg" id="bg-wv">
+                            <p class="text">Katso Aalto-Yliopiston professorin vinkit pikamuodin välttämiseen</p>
+                        </span>
+                        <span class="border"></span>
+                    </button>
+
+                    <button class="container" id="go-to-quiz">
+                        
+                        <span class="bg" id="bg-gtq">
+                            <p class="text">Testaa, millainen muodin kuluttaja olet</p>
+                        </span>
+                        <span class="border"></span>
+                    </button>
+
+                    <button class="container" id="go-to-tips">
+                        
+                        <span class="bg" id="bg-gtt">
+                            <p class="text">Selaa tyylivinkkejä ja inspiroidu</p>
+                        </span>
+                        <span class="border"></span>
+                    </button>
+
                 </div>
-                
+
+
+
             </section>
 
             <section class="quiz">
@@ -111,15 +130,15 @@
 
     <section class="content-mobile"></section>
 
-
-</body>
-<footer class="flex-container">
+    <footer class="flex-container">
         
-    <div class="icons">
-        <button class="icon" id="icon-instagram" onclick="window.location.href='https://www.instagram.com/tino_poutiainen/?hl=en';"></button>
-        <button class="icon" id="icon-twitter" onclick="window.location.href='https://twitter.com/PoutiainenTino';" ></button>
-        <button class="icon" id="icon-flickr" onclick="window.location.href='https://flickr.com/photos/tino_poutiainen/';" ></button>
-    </div>
+        <div class="icons">
+            <button class="icon" id="icon-instagram" onclick="window.location.href='https://www.instagram.com/tino_poutiainen/?hl=en';"></button>
+            <button class="icon" id="icon-twitter" onclick="window.location.href='https://twitter.com/PoutiainenTino';" ></button>
+            <button class="icon" id="icon-flickr" onclick="window.location.href='https://flickr.com/photos/tino_poutiainen/';" ></button>
+        </div>
+    
+    </footer>
+</body>
 
-</footer>
 </html>

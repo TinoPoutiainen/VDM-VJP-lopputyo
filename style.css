@@ -6,15 +6,18 @@ html{
 body{
     display: flex;
     flex-direction: column;
-    min-width: 200px;
+    min-width: 100px;
     max-width: 2500px;
     min-height: 100vh;
     margin: 0;
+    
 }
+
 .initial-view{
     
-    height: 100vh;
-    width: 100vw;
+    min-height: 100vh;
+    min-width: 100vw;
+    z-index: -10;
 }
 .main-image{
     
@@ -28,7 +31,7 @@ body{
     background-size: cover;
     z-index: 0;
     margin: 0%;
-    filter: brightness(80%);
+    filter: brightness(50%);
     
     
 }
@@ -151,7 +154,8 @@ body{
     display: flex;
     position: relative;
     min-width: 400px;
-    height: 100vh;
+    min-height: 100vh;
+    box-shadow: 3px 3px 3px rgb(108, 108, 108);
 }
 
 .content{
@@ -201,18 +205,11 @@ body{
     
 }
 button{
-    color: #5E5958;
-    font-family: Inter;
-    font-weight: 700;
-    margin: 1rem;
-    white-space: nowrap;
+    
     
     
 }
-button:hover{
-    border: 2px dashed #5E5958 ;
-    border-radius: 6px;
-}
+
 .menu-button{
     height: 2rem;
     width: 8rem;
@@ -222,7 +219,17 @@ button:hover{
     border: none;
     background-color: transparent;
 
+    color: #5E5958;
+    font-family: Inter;
+    font-weight: 700;
+    margin: 1rem;
+    white-space: nowrap;
 
+
+}
+.menu-button:hover{
+    border: 2px dashed #e3990f ;
+    border-radius: 6px;
 }
 #video-container{
     display: flex;
@@ -237,10 +244,10 @@ button:hover{
 
 .video{
     padding: 20px;
-    border-width: 2px;
+    border-width: 0.25rem ;
     border-style: dashed;
     border-radius: 10px;
-    border-color: #5E5958;
+    border-color: #e3990f;
     
     
     
@@ -284,11 +291,11 @@ button:hover{
     color: #5E5958;
     font-size: 1.2rem;
    
-    font-family: 'Bowlby One SC';
-   
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 700;
 
     padding: 20px ;
-    border: 2px dashed #5E5958;
+    border: 0.25rem dashed #e3990f;
     border-radius: 10px;
     margin: 0;
    
@@ -304,30 +311,87 @@ button:hover{
     
 }
 .container{
-    color: #5E5958;
-    font-size: 1rem;
-    font-family: 'Bowlby One SC';
+    color: white;
+    position: relative;
     
-    width: 70%;
-    min-height: 20%;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 1000;
     
-    align-self: flex-end;
-    margin-bottom: 2vw;
-    font-size: 0.8rem;
-    border: 2px dashed #5E5958;
-    border-radius: 10px;
+    
+    height: 40vw;
+    width: 40vw;
+
+    background-color: inherit;
+    
+    
+
+    align-self: center;
+   
+    margin-bottom: 11vw;
+    
+    font-size: 2.7rem;
+    white-space: pre-wrap;
+    border: none;
+   
+    
     text-align: center;
-}
-#watch-video{
+   
+
+    box-shadow: 3px 3px 3px rgb(108, 108, 108);
     
     
 }
-#go-to-quiz{
+
+.text{
+    display: flex;
+    margin: 10px;
+    align-self: center;
+    width: 100%;
+    
+}
+.bg{
+    position: absolute;
+    display: flex;
+    align-items: center;
+   
+    transform: translate3d(-50%, -50%, 0);
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;  
+    z-index: 1; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.bg:hover{
+    filter: brightness(120%);
+}
+.border{
+    position: absolute;
+    transform: translate3d(-50%, -50%, 0);
+    width: 115%;
+    height: 115%;
+    top: 50%;
+    left: 50%;
+    border: 0.25rem dashed #e3990f;
+    border-radius: 10px;
+
+   
     
 
 }
-#go-to-tips{
+#bg-wv{
+    background-image: url("/pictures/menu_bg1.png");
     
+    
+}
+#bg-gtq{
+    background-image: url("/pictures/menu_bg2.png");
+
+}
+#bg-gtt{
+    background-image: url("/pictures/menu_bg3.png");
    
 }
 .flex-container{
@@ -376,7 +440,7 @@ button:hover{
 
 
 
-@media (max-width:1000px) {
+@media (max-width:850px) {
     
     .main-image{
         position: absolute;
@@ -390,6 +454,7 @@ button:hover{
     .title-background{
         top:35%;
         left: 50%;
+        width: 100vw;
       
         
     }
@@ -428,10 +493,13 @@ button:hover{
         margin-bottom: 10vw;
 
     }
-    .text-menu{
-
-    }
+    
     .container{
-        align-self: center;
+        height: 50vw;
+        width: 50vw;
+    }
+    .text{
+        font-size: 1.7rem;
+       
     }
 }
