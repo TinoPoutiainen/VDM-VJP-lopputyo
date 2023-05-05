@@ -1,4 +1,4 @@
-.quiz{
+#quiz{
     display: flex;
     flex-direction: column;
     margin-bottom: 10vw;
@@ -106,10 +106,14 @@
     font-family: 'League Spartan', sans-serif;
     font-size: 1.2rem;
     color:  #5E5958;
+
     align-self: center;
     max-width: 50%;
+
+
     border: 0.25rem dashed #e3990f;
     border-radius: 10px;
+    padding: 10px;
 }
 #retake-button{
     

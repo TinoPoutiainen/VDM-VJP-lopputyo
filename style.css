@@ -198,14 +198,33 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    
     width: 100%;
-   
-    
-   
-  
-    
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
+
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+@keyframes fadeBorderAnimation {
+    0% {
+        border: 1px dashed #e3990f ;
+        border-radius: 6px;
+        
+    }
+    100% {
+        border: 3.5px dashed #e3990f ;
+        border-radius: 6px;
+     }
+}
+
 button{
     
     
@@ -230,8 +249,9 @@ button{
 
 }
 .menu-button:hover{
-    border: 3.5px dashed #e3990f ;
-    border-radius: 6px;
+    animation: fadeBorderAnimation ease 0.3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 #video-container{
     display: flex;
@@ -422,7 +442,7 @@ button{
     align-items: center;
     justify-content: center;
     justify-content: space-between;
-    height: 6vw;
+    height: 20vw;
     width: 100vw;
     background-color: #5E5958;
     z-index: 10;
