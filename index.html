@@ -76,27 +76,29 @@
                 <div class="text-menu">
 
                     <button class="container" id="watch-video" onclick="window.location.href='tips.html';">
-                        
                         <span class="bg" id="bg-wv">
                             <p class="text">Katso Aalto-Yliopiston professorin vinkit pikamuodin välttämiseen</p>
+                            <span class="border"></span>
                         </span>
-                        <span class="border"></span>
+                        
                     </button>
 
                     <button class="container" id="go-to-quiz">
                         
                         <span class="bg" id="bg-gtq">
                             <p class="text">Testaa, millainen muodin kuluttaja olet</p>
+                            <span class="border"></span>
                         </span>
-                        <span class="border"></span>
+                        
                     </button>
 
                     <button class="container" id="go-to-tips">
                         
                         <span class="bg" id="bg-gtt">
                             <p class="text">Selaa tyylivinkkejä ja inspiroidu</p>
+                            <span class="border"></span>
                         </span>
-                        <span class="border"></span>
+                        
                     </button>
 
                 </div>
@@ -106,7 +108,7 @@
             </section>
 
             <section class="quiz">
-                <p id="quiz-intro">Testaa tietosi vaatteiden vastuullisuudesta</p>
+                <p id="quiz-intro">Testaa tietosi vaatteiden vastuullisuudesta oheisella testillä. Oletko vastuullisuusguru vai vasta-alkaja?</p>
                 <div id="question-container">
                     <h2 id="question"></h2>
                     <div id="answer-buttons">
@@ -116,11 +118,13 @@
                     <button id="previous-button" class="control-button" disabled>Edellinen</button>
                     <button id="next-button" class="control-button">Seuraava</button>
                 </div> -->
-                <div id="result-container" style="display: none;">
-                    <p id="result"></p>
-                </div>
-                <div>
-                    <button id="retake-button" style="display: none;">Tee testi uudelleen</button>
+                <div class="result-view">
+                    <div id="result-container" style="display: none;">
+                        <p id="result"></p>
+                    </div>
+                    <div>
+                        <button class="answer-button" id="retake-button" style="display: none;">Tee testi uudelleen</button>
+                    </div>
                 </div>
 
             </section>

@@ -7,8 +7,7 @@ var questions = [
 			{ answer: "Not at all", score: 1 },
 			{ answer: "A little bit", score: 2 },
 			{ answer: "Moderately", score: 3 },
-			{ answer: "Quite a bit", score: 4 },
-			{ answer: "Very much", score: 5 }
+			
 		]
 	},
 	{
@@ -17,8 +16,7 @@ var questions = [
 			{ answer: "Never", score: 1 },
 			{ answer: "Rarely", score: 2 },
 			{ answer: "Sometimes", score: 3 },
-			{ answer: "Frequently", score: 4 },
-			{ answer: "Always", score: 5 }
+			
 		]
 	}
 ];
@@ -94,8 +92,11 @@ function showResult() {
 	questionElement.style.display = "none";
 	answerButtonsElement.style.display = "none";
 	
-	resultContainer.style.display = "block";
-    retakeButton.style.display = "inline";
+    
+	resultContainer.style.display = "flex";
+    retakeButton.style.display = "flex";
+    resultElement.style.display = "flex";
+
 
 
     //mahd. lopputekstit
