@@ -22,7 +22,7 @@ body{
 .main-image{
     
     position: relative;
-    background-image:  url("pictures/vdm-header-pic.png");
+    background-image:  url("/pictures/vdm-header-pic.png");
     background-attachment: fixed;   
     background-position: 50%;
     width: 100%;
