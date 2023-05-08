@@ -22,7 +22,7 @@ body{
 .main-image{
     
     position: absolute;
-    background-image:  url("/pictures/vdm-header-pic.png");
+    background-image:  url("pictures/vdm-header-pic.png");
     background-attachment: fixed;
     
     background-position: 50%;
@@ -66,7 +66,7 @@ body{
 
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     
 
     height: 15rem;
@@ -88,9 +88,9 @@ body{
 #main-title{
     
     font-family: 'Bowlby One SC';
-    font-size: 3rem;
+    font-size: 4rem;
     white-space:nowrap;
-    padding-bottom: 10px;
+    padding-bottom: 2rem;
     border-bottom: 5px dashed white;
    
    
@@ -126,7 +126,7 @@ body{
     width: 50px;
    
     
-    background: url("/pictures/arrow.png");
+    background: url("pictures/arrow.png");
     background-repeat: no-repeat;
     border: none;
     background-size: contain;
@@ -154,32 +154,34 @@ body{
 
 .main-view{
     display: flex;
+    flex-direction: column;
+    
     position: relative;
-    min-width: 400px;
-    min-height: 100vh;
+    min-width: 40vw;
+    min-height: 200vh;
     box-shadow: 3px 3px 3px rgb(108, 108, 108);
+    
+    
+    background-color: #FCD581;;
 }
+#main-border{
+    display: flex;
+    position: absolute;
+    align-self: center;
+    height: 100%;
+    width: 98%;
+    /* border-left: 3.5px dashed #e3990f ;
+    border-right: 3.5px dashed #e3990f ; */
 
+}
 .content{
     display: flex;
     flex-direction: row;
- 
-    background-color: #C8B3A7;
-
-   
-   
+    align-items: center;
+    background-color: #C8B3A7;  
 }
 
 
-.main-view{
-    display: flex;
-    flex-direction: column;
-   
-
-    width: 75vw;
-    min-height: 200vh;
-    background-color: #FCD581;;
-}
 .margin{
     display: flex;
     justify-content: center;
@@ -187,9 +189,7 @@ body{
     width: 20vw;
     opacity: 100%;
 }
-#left{
 
-}
 
 
 
@@ -225,11 +225,6 @@ body{
      }
 }
 
-button{
-    
-    
-    
-}
 
 .menu-button{
     height: 4rem;
@@ -376,10 +371,21 @@ button{
 }
 .container:hover .bg,
 .container:focus .bg {
-  transform: scale(1.1);
-  filter: brightness(110%);
+  /* transform: scale(1.1); */
+  filter: brightness(120%);
+  background-size: 120%;
+  animation: zoomAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
-
+@keyframes zoomAnimation {
+    0% {
+        background-size: 100%;
+    }
+    100% {
+        background-size: 120%;
+     }
+}
 .bg{
     
     display: flex;
@@ -409,6 +415,7 @@ button{
     width: 100%;
     padding: 20px;
     border: 0.25rem dashed #e3990f;
+    border-radius: 10px;
     transform-origin: 50%;
     
     
@@ -419,66 +426,75 @@ button{
 
 }
 #bg-wv{
-    background-image: url("/pictures/menu_bg1.png");
+    background-image: url("pictures/menu_bg1.png");
     
     
     
 }
 #bg-gtq{
-    background-image: url("/pictures/menu_bg2.png");
+    background-image: url("pictures/menu_bg2.png");
 
 }
 #bg-gtt{
-    background-image: url("/pictures/menu_bg3.png");
+    background-image: url("pictures/menu_bg3.png");
    
 }
-.flex-container{
+footer{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    
-
-    
     align-items: center;
     justify-content: center;
     justify-content: space-between;
-    height: 20vw;
+    min-height: 20vw;
     width: 100vw;
-    background-color: #5E5958;
-    z-index: 10;
+    background-color: #C8B3A7;
+   
+    margin: 0;
+}
+h2{
+    color: white;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 1.5rem;
+    margin-top: 5vw;
+    
+}
+
+
+#kl-logo{
+    height: 12vw;
+    
 }
 .icons{
     display: flex;
+    flex-direction: row;
     gap: 5vw;
-    margin-right: 2vw;
+    margin: 2vw;
+    
+    
 }
 .icon{
     display: flex;
     background-repeat: no-repeat;
     border: none;
     background-size: contain;
-    height: 3vw;
-    width: 3vw;
-    gap: 5vw;
-    margin-right: 2vw;
-}
-#icon-instagram{
-    background: url("/pictures/instagram_logo.png");
-}
-#icon-instagram:hover{
-    opacity: 50%;
+    height: 5vw;
+    width: 5vw;
+   
+    
 }
 
+#icon-instagram{
+    background-image: url("pictures/instagram_logo.png");
+}
 #icon-twitter{
-    background: url("/pictures/twitter_logo.png");
+    background-image: url("pictures/twitter_logo.png");
     transform: translate3d(0%, 10%, 0);  
 }
-#icon-twitter:hover{
-    opacity: 50%;}
 
 
 
-@media (max-width:850px) {
+
+@media (max-width:1000px) {
     
     .main-image{
         position: absolute;
@@ -493,6 +509,8 @@ button{
         top:35%;
         left: 50%;
         width: 100vw;
+        align-items: center;
+    
       
         
     }
@@ -504,8 +522,8 @@ button{
     }
     #main-title{
         
-        letter-spacing: 1vw;
-        font-size: 2rem;
+        
+        font-size: 2.5rem;
   
      
        
@@ -513,10 +531,12 @@ button{
     }
     #sub-title{
        
-        font-size: 3rem;
+        font-size: 2.5rem;
         
     }
-
+    #name{
+        font-size: 2rem;
+    }
     .menu-button{
         font-size: 1rem;
     }
@@ -540,5 +560,24 @@ button{
     .text{
         font-size: 1.7rem;
        
+    }
+}
+@media (max-width: 650px) {
+    #main-title{
+        
+        
+        font-size: 2rem;
+  
+     
+       
+        
+    }
+    #sub-title{
+       
+        font-size: 2rem;
+        
+    }
+    #name{
+        font-size: 1.5rem;
     }
 }
