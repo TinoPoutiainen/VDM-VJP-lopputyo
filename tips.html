@@ -8,10 +8,9 @@
     <title>Tips</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="tips.css">
+    <script src="comments.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=League+Spartan:wght@800&family=Inter:wght@700&family=Syne&family=Rubik+Mono+One&family=Koulen&display=swap" rel="stylesheet">
 </head>
-
-
 
 <body>
     <section class="initial-view">
@@ -27,63 +26,123 @@
         <div class="arrow"> </div>
     </section>
 
+    <section class="initial-view-mobile">
+       
+        <div class="main-image" title="main-image" alt="bag-img">
+            <div id="border"></div>
+        </div>
+        <div class="title-background">
+            <h1 id="main-title">KÄYTÄ LUOVUUTTA</h1>
+            <h4 id="sub-title">ÄLÄ RAHAA</h4>
+            <h4 id="name">#HARKITTUFITTI</h4>
+            <img id="logo" src="/pictures/logo.png" alt="logo"/>
+        </div>
+       
+        <div class="arrow"> </div>
+    
+    </section>
+
     <section class="content">
-        <section class="margin" id="left">
-            
-        </section>
+        <section class="margin" id="left"></section>
 
         <section class="main-view">
-
+            
             <div id="main-border"></div>
-           
 
-
-
+            <div class="menu-buttons">
+                <button class="menu-button" id="back" onclick="window.location.href='index.html';">TAKAISIN</button>
+            </div>
+            
             <section class="legend">
-                <p id="about">Vastuullisin vaate löytyy jo vaatekaapistasi.</p>
+                <p id="about">Vastuullisin vaate löytyy jo vaatekaapistasi. <br><br>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil obcaecati dignissimos 
+                atque cupiditate quaerat unde fugiat odit iure labore dolorem quo, officiis incidunt 
+                molestiae dicta quam natus voluptatem dolorum repudiandae?</p>
             </section>
 
             <section>
                 <div class="text-menu">
 
-                    <button class="container" id="tips1">
-                        <span class="bg" id="bg-wv">
-                            <p class="text">Katso Aalto-Yliopiston professorin vinkit pikamuodin välttämiseen</p>
+                   
+
+         
+                    <div class="container" id="tip1">
+                        <span class="bg" id="bg1">
+                            <span class="text-container">
+                                <p class="text">Jos vanha vaate ei istu, muokkaa sitä!</p>
+                            </span>
+                            
+                            <p class="alt-text">Farkut on helppo lyhentää leikkaamalla sopivan mittaisiksi. Sauman voi viimeistellä ompelukoneella tai lahkeenreunan voi jättää huolittelemattomaksi. Viimeistelemätön lahkeenreuna on rento ja tyylikäs. </p>
                             <span class="border"></span>
                         </span>
-                        
-                    </button>
+                    </div>
 
-                    <button class="container" id="tips2">
-                        
-                        <span class="bg" id="bg-gtq">
-                            <p class="text">Testaa, millainen muodin kuluttaja olet</p>
+                    <div class="container" id="tip2"> 
+                        <span class="bg" id="bg2">
+                            <span class="text-container">
+                                <p class="text">Pese vaatteet oikein ja noudata pesuohjeita</p>
+                            </span>
+                            <p class="alt-text">Muista lajitella pesuerät värin mukaan. Näin vaatteiden värit pysyvät pitkään kirkkaina.</p>
+                            <span class="border"></span>
+                        </span>  
+                    </div>
+
+                    <div class="container" id="tip3"> 
+                        <span class="bg" id="bg3">
+                            <span class="text-container">
+                            <p class="text">Huolla ja siistivaatteitasi säännöllisesti</p>
+                            </span>
+                            <p class="alt-text">Nukan saa helposti pois nukanpoistajalla ja villapaidan siistiksi villakammalla. Vaatteiden höyryttäminen, tuulettaminen ja harjaaminen antaa niille raikkaan ilmeen.</p>
                             <span class="border"></span>
                         </span>
-                        
-                    </button>
+                    </div>
 
-                    <button class="container" id="tips3">
-                        
-                        <span class="bg" id="bg-gtt">
-                            <p class="text">Selaa tyylivinkkejä ja inspiroidu</p>
+                    <div class="container" id="tip4">
+                        <span class="bg" id="bg4">
+                            <span class="text-container">
+                            <p class="text">Asukriisin varalle - suunnittele asuja etukäteen</p>
+                            </span>
+                            <p class="alt-text">Ota kivoista asuista kuvia puhelimeesi ja tallenna ne yhteen paikkaan. Kriisin hetkellä voit valita valmiiksi suunnitellun asun. Jokaiseen tilaisuuteen ei tarvitse ostaa uutta vaatetta ja samaa asua voi käyttää monta kertaa.</p>
                             <span class="border"></span>
                         </span>
-                        
-                    </button>
+                    </div>
 
+                    <div class="container" id="tip5"> 
+                        <span class="bg" id="bg5">
+                            <span class="text-container">
+                            <p class="text">Siivoa vaatekaappi säännöllisesti</p>
+                            </span>
+                            <p class="alt-text">Sotkuisesta kaapista on vaikea löytää sopivia vaatteita. Käy säännöllisesti vaatekaappisi läpi ja järjestä kaappi niin, että näet kaikki vaatteet.</p>
+                            <span class="border"></span>
+                        </span>  
+                    </div>
+
+                    <div class="container" id="tip6"> 
+                        <span class="bg" id="bg6">
+                            <span class="text-container">
+                            <p class="text">Vaihda ja lainaa kavereiden kanssa</p>
+                            </span>
+                            <p class="alt-text">Jos omasta kaapista ei löydy sopivaa, käy kurkkaamassa ystävän, sisaruksen tai vanhemman vaatekaappiin. </p>
+                            <span class="border"></span>
+                        </span>
+                    </div>
                 </div>
-
-
-
             </section>
-
-           
+            <section class="comment-section">
+                <input type="text" id="comment-box" placeholder="...">
+                <button id="post-button">Lähetä</button>
+                <ul id="unordered">
+                
+                 </ul>
+                
+            </section>
+            
         </section>
+        
         <section class="margin" id="right"></section>
     </section>
 
-    <section class="content-mobile"></section>
+    
 
     <footer>
         
