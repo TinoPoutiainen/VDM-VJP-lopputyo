@@ -1,6 +1,10 @@
+
+
 #main-tips{
     background-image:  url("pictures/tips_header_pic.png"); 
 }
+
+
 
 #main-title{
     font-size: 3rem;
@@ -11,6 +15,36 @@
 #name{
     font-size: 2.5rem;
 }
+.menu-buttons{
+    justify-content: flex-start;
+    
+}
+.back-button{
+    height: 4rem;
+    width: 10rem;
+
+    font-size: 1.4rem;
+    margin: 2vw;
+    border: none;
+    background-color: transparent;
+
+    color: #5E5958;
+    font-family: 'League Spartan', sans-serif;
+   
+    white-space: nowrap;
+
+    
+    
+}
+.back-button:hover{
+    border: 10px dashed red;
+}
+
+.content{
+
+    justify-content: center;
+}
+
 .legend{
     display: flex;
     flex-direction: column;
@@ -22,10 +56,128 @@
     margin-top: 5vw; 
 }
 #about{
-    max-width: 100%;
+    max-width: 40vw;
     font-size: 2.5rem;
+    margin: 2vw;
+
 }
-@media (max-width:1000px) {
+
+
+
+
+.container:hover .text,
+.container:focus .text {
+  animation: textFadeOutAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+
+}
+.container:hover .alt-text,
+.container:focus .alt-text {
+    display: inline;
+  animation: textFadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+
+}
+
+
+@keyframes textFadeOutAnimation{
+    0%{
+        opacity: 100%;
+    }
+    100%{
+        opacity: 0%;
+    }
+}
+@keyframes textFadeInAnimation{
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+.bg{
+    
+}
+.text-container{
+    display: flex;
+    text-align: center;
+    position: absolute;
+}
+.text{
+    
+    font-size: 3.5vw;
+    animation: textFadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.alt-text{
+    
+    opacity: 0%;
+    font-size: 3vw;
+    animation: textFadeOutAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+#bg1{
+    background-image: url("pictures/Tips/tip1.png");
+}
+#bg2{
+    background-image: url("pictures/Tips/tip2.png");
+}
+#bg3{
+    background-image: url("pictures/Tips/tip3.png");
+}
+#bg4{
+    background-image: url("pictures/Tips/tip4.png");
+}
+#bg5{
+    background-image: url("pictures/Tips/tip5.png");
+}
+#bg6{
+    background-image: url("pictures/Tips/tip6.png");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.commment-section{
+    display: flex;
+    flex-direction: column;
+   
+    justify-content: space-around;
+    max-height: 100%;
+    align-items: center;
+    
+
+    
+
+}
+ul{
+    display: flex;
+    flex-direction: column-reverse;
+}
+li{
+    display: flex;
+    max-width: 20vw;
+    max-height: 10vw;
+    background-color: bisque;
+    margin: 1vw;
+}
+
+
+@media (max-width:1100px) {
 
     .title-background{
         top:35%;
@@ -40,7 +192,13 @@
     #name{
         font-size: 2rem;
     }
-
+    #about{
+       
+        font-size: 1.4rem;
+    }
+    /* .alt-text{
+        font-size: 2rem;
+    } */
 }
 @media (max-width: 650px) {
     #main-title{
@@ -49,4 +207,10 @@
     #name{
         font-size: 1.5rem;
     }
+    #about{
+        font-size:0.7rem;
+    }
+    /* .alt-text{
+        font-size: 0.5rem;
+    } */
 }
