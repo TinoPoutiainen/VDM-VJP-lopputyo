@@ -18,7 +18,80 @@ var questions = [
 			{ answer: "Sometimes", score: 3 },
 			
 		]
-	}
+	},
+	{
+		question: "How often do you exercise?",
+		answers: [
+			{ answer: "Never", score: 1 },
+			{ answer: "Rarely", score: 2 },
+			{ answer: "Sometimes", score: 3 },
+			
+		]
+	},
+	{
+		question: "How often do you exercise?",
+		answers: [
+			{ answer: "Never", score: 1 },
+			{ answer: "Rarely", score: 2 },
+			{ answer: "Sometimes", score: 3 },
+			
+		]
+	},
+	{
+		question: "How often do you exercise?",
+		answers: [
+			{ answer: "Never", score: 1 },
+			{ answer: "Rarely", score: 2 },
+			{ answer: "Sometimes", score: 3 },
+			
+		]
+	},
+	{
+		question: "How often do you exercise?",
+		answers: [
+			{ answer: "Never", score: 1 },
+			{ answer: "Rarely", score: 2 },
+			{ answer: "Sometimes", score: 3 },
+			
+		]
+	},
+	{
+		question: "How often do you exercise?",
+		answers: [
+			{ answer: "Never", score: 1 },
+			{ answer: "Rarely", score: 2 },
+			{ answer: "Sometimes", score: 3 },
+			
+		]
+	},
+	{
+		question: "How often do you exercise?",
+		answers: [
+			{ answer: "Never", score: 1 },
+			{ answer: "Rarely", score: 2 },
+			{ answer: "Sometimes", score: 3 },
+			
+		]
+	},
+	{
+		question: "How often do you exercise?",
+		answers: [
+			{ answer: "Never", score: 1 },
+			{ answer: "Rarely", score: 2 },
+			{ answer: "Sometimes", score: 3 },
+			
+		]
+	},
+	{
+		question: "How often do you exercise?",
+		answers: [
+			{ answer: "Never", score: 1 },
+			{ answer: "Rarely", score: 2 },
+			{ answer: "Sometimes", score: 3 },
+			
+		]
+	},
+
 ];
 //pidä kirjaa kysymyksestä ja kertyneistä vastauksista
 var currentQuestionIndex = 0;
@@ -31,9 +104,13 @@ var resultContainer = document.getElementById("result-container");
 var resultElement = document.getElementById("result");
 var retakeButton = document.getElementById("retake-button")
 
+var counter = document.getElementById("number");
+var numOfQ = document.getElementById("numOfQ");
+var index = document.getElementById("index");
 
 retakeButton.addEventListener("click", resetQuiz);
 
+numOfQ.innerHTML = questions.length
 showQuestion(currentQuestionIndex);
 
 //näytä kysymys indeksillä 'questionIndex', luo vast. vaihtoehtojen napit
@@ -41,9 +118,11 @@ function showQuestion(questionIndex) {
 	var question = questions[questionIndex];
 	questionElement.innerText = question.question;
 	answerButtonsElement.innerHTML = "";
+
 	for (var i = 0; i < question.answers.length; i++) {
 		var answer = question.answers[i];
 		var button = document.createElement("button");
+
 		button.innerText = answer.answer;
 		button.classList.add("answer-button");
         // tallenna buttoniin vastaukseen yhdistettu arvo
@@ -51,10 +130,11 @@ function showQuestion(questionIndex) {
         // vastausta klikatessa kutsutaan selectAnswer
 		button.addEventListener("click", selectAnswer);
 		answerButtonsElement.appendChild(button);
+		index.innerHTML = currentQuestionIndex + 1
 	}
 	
 }
-// renderöi seuraava kysymys tai tulos
+// tarkista onko kysymyksiä jäljellä, renderöi seuraava kysymys tai tulos
 function showNextQuestion() {
 	currentQuestionIndex++;
 	if (currentQuestionIndex >= questions.length) {
@@ -77,6 +157,7 @@ function selectAnswer(e) {
 function resetQuiz(){
     questionElement.style.display = "flex";
 	answerButtonsElement.style.display = "flex";
+	counter.style.display = "inline";
 	
 	resultContainer.style.display = "none";
     retakeButton.style.display = "none";
@@ -91,6 +172,7 @@ function resetQuiz(){
 function showResult() {
 	questionElement.style.display = "none";
 	answerButtonsElement.style.display = "none";
+	counter.style.display = "none";
 	
     
 	resultContainer.style.display = "flex";
