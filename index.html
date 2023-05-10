@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="quiz.css">
     <script src="main.js" defer></script>
     <script src="quiz.js" defer></script>
-    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=League+Spartan:wght@800&family=Inter:wght@700&family=Syne&family=Rubik+Mono+One&family=Koulen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=League+Spartan:wght@500&family=Inter:wght@700&family=Syne&family=Rubik+Mono+One&family=Koulen&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -56,19 +56,20 @@
             <div id="main-border"></div>
             <div class="menu-buttons">
                 <button class="menu-button" id="vinkit" onclick="window.location.href='tips.html';">VINKIT</button>
-                <button class="menu-button" id="meistä" onclick="window.location.href='aboout.html';">MEISTÄ</button>
+                <button class="menu-button" id="meistä" onclick="window.location.href='about.html';">MEISTÄ</button>
+                <button class="menu-button" id="meistä" onclick="window.location.href='videos.html';">VIDEOT</button>
                 <button class="menu-button" id="testi" onClick="document.getElementById('quiz').scrollIntoView();">TEE TESTI</button>
             </div>
-            <section id="video-container">
-                
-                <video class="video" id="main-video" controls poster="/pictures/poster_main.png">
+            <section class="video-container">
+                <video class="video" id="main-video" poster="/pictures/poster_main.png">
                     <source src="videos/VJP-VDM video.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
-                <button id="pause-play" onclick="pauseVideo()">
-                    TOISTA
-                </button>
-        
+                <div class="button-container">
+                    <button class="pause-play" onclick="pauseVideo()">
+                        TOISTA
+                    </button>
+                </div>
             </section>
             <section class="legend">
                 <p id="about">
@@ -115,9 +116,16 @@
             <section id="quiz">
                 <p id="quiz-intro">Testaa tietosi vaatteiden vastuullisuudesta oheisella testillä. Oletko vastuullisuusguru vai vasta-alkaja?</p>
                 <div id="question-container">
-                    <h2 class=text id="question"></h2>
+                    <h2 id="question"></h2>
                     <div id="answer-buttons">
                     </div>
+                </div>
+
+                <div id="number">
+                    <span id="index"></span>
+                    <span>/</span>
+                    <span id="numOfQ"></span>
+
                 </div>
                 <!-- <div id="controls-container">
                     <button id="previous-button" class="control-button" disabled>Edellinen</button>
@@ -125,7 +133,7 @@
                 </div> -->
                 <div class="result-view">
                     <div id="result-container" style="display: none;">
-                        <p class=text id="result"></p>
+                        <p id="result"></p>
                     </div>
                     <div>
                         <button class="answer-button" id="retake-button" style="display: none;">Tee testi uudelleen</button>

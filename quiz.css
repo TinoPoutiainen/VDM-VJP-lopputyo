@@ -1,22 +1,26 @@
+
 #quiz{
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin-bottom: 10vw;
     margin-top: 0vw;
+    width: 100%;
+    font-size: 2vw;
    
     
     
 }
 #quiz-intro{
 
-    align-self: center;
+   
     text-align: center;
-    width: 100%;
+    width: 80%;
     font-family: 'League Spartan', sans-serif;
     color:  #5E5958 ;
-    font-size: 1.5rem;
+   
     padding: 20px;
-    max-width: 50%;
+    max-width: 90%;
     border: 0.25rem dashed #e3990f;
     border-radius: 10px;
 
@@ -26,32 +30,37 @@
 #question-container{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    align-items: center;
+    min-width: 40vw;
     animation: fadeInAnimation ease 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;  
 }
 
 #question{
-    align-self: center;
-    max-width: 40vw ;
-    padding: 20px;
+    display: flex;
+
+    justify-content: center;
+    max-width: 100%;
     font-family: 'League Spartan', sans-serif;
-    font-size: 1.2rem;
+    font-size: 2vw;
     color:  #5E5958;
+    padding: 20px;
     border: 0.25rem dashed #e3990f;
     border-radius: 10px;
+    white-space:nowrap;
 }
 #answer-buttons{
     display: flex;
     flex-direction: column;
-    min-width: 30%;
-    max-width: 50%;
+    
+    max-width: 70%;
     align-self: center;
 }
 button{
-    font-size: 1.2rem;
+    
     font-family: 'League Spartan', sans-serif;
+    font-size: 2vw;
     background-color: transparent;
     color:  #5E5958;
     border: 0.25rem dashed #e3990f;
@@ -78,44 +87,48 @@ button{
     background-color: rgba(241, 216, 19, 0.851);
     opacity: 50%;
 }
-#controls-container{
-    display: flex;
-    align-self: center;
 
-}
 .result-view{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    justify-content: center;
     align-self: center;
 }
 #result-container{
-    align-self: center; 
+    display: flex;
+    justify-content: center; 
      
 }
 #result{
+    display: flex;
+    text-align: center;
+
     font-family: 'League Spartan', sans-serif;
-    font-size: 1.2rem;
+    font-size: 2vw;
     color:  #5E5958;
 
-    align-self: center;
+   
     max-width: 50%;
-
-
     border: 0.25rem dashed #e3990f;
     border-radius: 10px;
     padding: 10px;
 }
 #retake-button{
-    align-self: center;
+    
 }
 
 @media (max-width:1000px) {
-    #quiz-intro{
-        font-size: 1rem;
-    }
-    #question{
-        
-    }
+   #quiz{
+    font-size: 3.5vw;
+   }
+   #question{
+    font-size: 3.5vw;
+   }
+   button{
+    font-size: 3.5vw;
+   }
+   #result{
+    font-size: 3.5vw;
+   }
 }
