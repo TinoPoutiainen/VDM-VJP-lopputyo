@@ -151,8 +151,20 @@ header{
     display: flex;
     min-height: 200vh;
     min-width: 10vw;
-    opacity: 100%;
+
+    position: relative;   
 }
+.bg-graphic{
+    mix-blend-mode: difference;
+    position: absolute;
+    
+    width: 80%;
+    right: 25%;
+    top:2%;
+    rotate: 40deg;
+
+}
+
 
 .main-view{
     display: flex;
@@ -251,7 +263,7 @@ header{
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
-#pause-play{
+.pause-play{
     align-self: flex-end;
     margin-top: 2vw;
     margin-right: 0;
@@ -265,7 +277,7 @@ header{
     border: none;
     background-color: transparent;  
 }
-#pause-play:hover{
+.pause-play:hover{
     border: 3.5px dashed #e3990f ;
     border-radius: 6px;
 }

@@ -1,5 +1,5 @@
-let video = document.getElementsByClassName("video");
-let button = document.getElementsByClassName("pause-play");
+let video = document.querySelectorAll("video");
+let button = document.querySelectorAll("pause-play");
 
 let isPaused = true
 
