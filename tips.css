@@ -19,7 +19,7 @@
     justify-content: flex-start;
     
 }
-.back-button{
+button{
     height: 4rem;
     width: 10rem;
 
@@ -36,8 +36,10 @@
     
     
 }
-.back-button:hover{
-    border: 10px dashed red;
+button:hover{
+    animation: fadeBorderAnimation ease 0.3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 .content{
@@ -146,11 +148,6 @@
 
 
 
-
-
-
-
-
 .commment-section{
     display: flex;
     flex-direction: column;
@@ -159,20 +156,69 @@
     max-height: 100%;
     align-items: center;
     
+    
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+}
 
+.input-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
 
 }
+.input-element{
+    display: flex;
+    flex-direction: column;
+   
+    justify-content: center;
+    margin: 1vw;
+}
+#no-name{
+    display: none;
+}
+#no-comment{
+    display: none;
+}
+#no-swear-name{
+    display: none;
+}
+#no-swear-comment{
+    display: none;
+}
+
+#unordered{
+    display: flex;
+     
+    flex-direction: column-reverse;
+    margin: 0;
+    width: 100%;
+}
 ul{
     display: flex;
+    align-self: center;
     flex-direction: column-reverse;
+    margin: 0;
+    width: 100%;
 }
 li{
     display: flex;
-    max-width: 20vw;
+    flex-direction: column;
+    min-width: 20vw;
+    max-width: 40vw;
+    text-align: center;
+    white-space: wrap;
     max-height: 10vw;
     background-color: bisque;
     margin: 1vw;
+    
+}
+p{
+    margin: 0;
 }
 
 

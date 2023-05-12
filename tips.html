@@ -128,8 +128,22 @@
                 </div>
             </section>
             <section class="comment-section">
-                <input type="text" id="comment-box" placeholder="...">
-                <button id="post-button">Lähetä</button>
+                <div class="inputs">
+
+                    <div class="input-container" id="name-box-container">
+                        <input class="input-element" type="text" id="name-box" placeholder="Nimimerkki">
+                        <p id="no-name">Syötä nimimerkki</p>
+                        <p id="no-swear-name">Nimi ei saa sisältää loukkaavia sanoja</p>
+                    </div>
+
+                    <div class="input-container" id="comment-box-container">
+                        <input class="input-element" type="text" id="comment-box" placeholder="...">
+                        <p id="no-comment">Syötä viesti</p>
+                        <p id="no-swear-comment">Viesti ei saa sisältää loukkaavia sanoja</p>
+                    </div>
+                    
+                    <button class="input-element" id="post-button">Lähetä</button>
+                </div>
                 <ul id="unordered">
                 
                  </ul>
