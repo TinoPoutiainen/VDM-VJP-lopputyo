@@ -30,20 +30,13 @@
     justify-content: space-between;
     max-width: 30%;
 }
-.pause-play{
-    margin-top: 1vw;
-    padding: 1vw;
-    font-size: 2vw;
-}
+
 .video-desc{
-   
+    width: 100%;
     margin-left: 4vw;
     color: #5E5958;
     font-size: 1.5vw;
     font-family: 'League Spartan', sans-serif;
-    /* padding: 20px ;
-    border: 0.25rem dashed #e3990f;
-    border-radius: 10px; */
     margin: 0;
 }
 
@@ -59,11 +52,16 @@
     }
     .side-content{
         flex-direction: row;
+        justify-content: space-between;
         max-width: 80%;
        
+    }
+    .button-container{
+        justify-content: flex-end;
     }
     .video-desc{
         font-size: 2.5vw;
     }
+   
 }
 
