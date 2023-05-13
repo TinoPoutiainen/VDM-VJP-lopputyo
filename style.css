@@ -299,8 +299,10 @@ header{
     font-size: 2vw;
     font-family: 'League Spartan', sans-serif;
     padding: 20px ;
+
     border: 0.25rem dashed #e3990f;
     border-radius: 10px;
+    
     margin: 0;
    
 }
@@ -465,7 +467,7 @@ h2{
     display: none;
 }
 
-@media (max-width:1000px) {
+@media (max-width:1100px) {
     .initial-view{
         display: none;
     }
@@ -506,8 +508,8 @@ h2{
         font-size: 1rem;
     }
     
-    #pause-play{
-        font-size: 1rem;
+    .pause-play{
+        font-size: 2vw;
     }
     .legend{
         flex-direction: column;
@@ -524,23 +526,27 @@ h2{
         width: 50vw;
         margin-bottom: 18vw;
     }
-    /* .text{
-        font-size: 1.7rem;
-       
-    } */
+   
 }
 @media (max-width: 650px) {
-    #main-title{ 
-        font-size: 2rem; 
+    
+    
+    #main-title{
+        font-size: 1.5rem;
     }
     #sub-title{
        
-        font-size: 2rem;  
+        font-size: 1.5rem;  
     }
+   
     #name{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
+    
     .button-container{
         justify-content: center;
+    }
+    .pause-play{
+        font-size: 4vw;
     }
 }

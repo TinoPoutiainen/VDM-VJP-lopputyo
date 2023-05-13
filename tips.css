@@ -19,7 +19,7 @@
     justify-content: flex-start;
     
 }
-button{
+#post-button{
     height: 4rem;
     width: 10rem;
 
@@ -36,7 +36,7 @@ button{
     
     
 }
-button:hover{
+#post-button:hover{
     animation: fadeBorderAnimation ease 0.3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -55,13 +55,7 @@ button:hover{
     margin-bottom: 10vw;
     margin-top: 0vw; 
 }
-#about{
-    max-width: 40vw;
-    font-size: 2rem;
-    margin: 2vw;
-    
 
-}
 
 
 
@@ -108,14 +102,14 @@ button:hover{
     position: absolute;
 }
 .text{
-    
+    color: white;
     font-size: 3.5vw;
     animation: textFadeInAnimation ease 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
 .alt-text{
-    
+    color: white;
     opacity: 0%;
     font-size: 3vw;
     animation: textFadeOutAnimation ease 1s;
@@ -148,16 +142,18 @@ button:hover{
 
 
 
-.commment-section{
+.comment-section{
     display: flex;
     flex-direction: column;
-   
-    justify-content: space-around;
+    
+    
     max-height: 100%;
     align-items: center;
+    text-align: center;
     
-    
+    margin-bottom: 5vw;
 }
+
 .inputs{
     display: flex;
     flex-direction: column;
@@ -168,59 +164,74 @@ button:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-
 }
 .input-element{
     display: flex;
     flex-direction: column;
-   
     justify-content: center;
     margin: 1vw;
 }
-#no-name{
-    display: none;
+
+#comment-box{
+    border: none;
+    font-size: 1.2vw;
+    width: 40vw;
+    
 }
-#no-comment{
-    display: none;
-}
-#no-swear-name{
-    display: none;
-}
-#no-swear-comment{
-    display: none;
+#name-box{
+    border: none;
+    font-size: 1.2vw;
 }
 
+.error-text{
+    display: none;
+    text-align: center;
+}
 #unordered{
     display: flex;
-     
     flex-direction: column-reverse;
-    margin: 0;
+    align-items: center;
     width: 100%;
 }
 ul{
-    display: flex;
-    align-self: center;
-    flex-direction: column-reverse;
-    margin: 0;
-    width: 100%;
+    list-style: none;
 }
 li{
     display: flex;
     flex-direction: column;
-    min-width: 20vw;
-    max-width: 40vw;
-    text-align: center;
-    white-space: wrap;
-    max-height: 10vw;
+    
+    width: 40vw;
+    text-align:start;
+   
+    
     background-color: bisque;
     margin: 1vw;
+    word-break: break-all;
+    
+    border:     0.25rem dashed #e3990f;
+    border-radius: 10px;
+
     
 }
 p{
-    margin: 0;
-}
+    display: flex;
+    width: 38vw;
 
+    color: #5E5958;
+    font-size: 1.5vw;
+    font-family: 'League Spartan', sans-serif;
+
+    margin: 1vw;
+    
+    
+    
+}
+#comment-intro{
+    display: flex;
+    text-align: center;
+    font-size: 2vw;
+   
+}
 
 @media (max-width:1100px) {
 
@@ -237,13 +248,26 @@ p{
     #name{
         font-size: 2rem;
     }
-    #about{
-       
-        font-size: 1.4rem;
+    
+
+    #comment-box{
+        font-size: 2vw;
     }
-    /* .alt-text{
-        font-size: 2rem;
-    } */
+    #name-box{
+        font-size: 2vw;
+    }
+
+
+    li{
+        border-width:0.5vw;
+    }
+    #comment-intro{
+        font-size: 3vw;
+    }
+    p{
+        font-size: 2vw;
+       
+    }
 }
 @media (max-width: 650px) {
     #main-title{
@@ -252,10 +276,25 @@ p{
     #name{
         font-size: 1.5rem;
     }
-    #about{
-        font-size:0.7rem;
+ 
+
+
+    #comment-box{
+        font-size: 4vw;
     }
-    /* .alt-text{
-        font-size: 0.5rem;
-    } */
+    #name-box{
+        font-size: 4vw;
+    }
+    li{
+        
+        width: 60vw;
+    }
+    p{
+        font-size: 4vw;
+        width: 58vw;
+    }
+    #comment-intro{
+        font-size: 4vw;
+    }
+
 }
