@@ -20,21 +20,7 @@
     
 }
 #post-button{
-    height: 4rem;
-    width: 10rem;
 
-    font-size: 1.4rem;
-    margin: 2vw;
-    border: none;
-    background-color: transparent;
-
-    color: #5E5958;
-    font-family: 'League Spartan', sans-serif;
-   
-    white-space: nowrap;
-
-    
-    
 }
 #post-button:hover{
     animation: fadeBorderAnimation ease 0.3s;
