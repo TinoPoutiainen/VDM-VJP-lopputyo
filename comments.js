@@ -1,3 +1,4 @@
+// elementit
 let postButton = document.getElementById("post-button");
 let commentBox = document.getElementById("comment-box");
 let nameBox = document.getElementById("name-box");
@@ -7,18 +8,22 @@ let noComment = document.getElementById("no-comment");
 let noSwearName = document.getElementById("no-swear-name");
 let noSwearComment = document.getElementById("no-swear-comment");
 
+// lista kiellettyjä sanoja
 var profanities = ["helvetti", "jumalauta", "kyrpä", "paska", "perkele", "perse", "saatana", "vittu"]
+
 var nameOK = true
 var commentOK = true
+// apufunktio, joka varmistaa sana olevan sallittu
 function checkProfanity(word){
     return profanities.includes(word);
 }
 
 postButton.addEventListener("click", function(){
-    console.log("toimii");
+    
     var commentBoxValue = commentBox.value;
     var nameBoxValue = nameBox.value;
-
+    // if-else rakenteella katsotaan onko input kenttä tyhjä, täytetty, vai täytetty kielletyllä sanalla, ja
+    // muokataan sivun elementtien näkyvyyttä tuloksen perusteella
     if (nameBoxValue == "") {
         noName.style.display = "inline";
         noSwearName.style.display = "none";
@@ -51,6 +56,7 @@ postButton.addEventListener("click", function(){
             commentOK = true
         }
     }
+    // jos kenttä on täytetty sallituilla sanoilla, luodaan uusi kommentti listaelementtinä
     if (!(nameBoxValue == "") && !(commentBoxValue == "") && commentOK && nameOK) {
         var listElement = document.createElement("li");
         
@@ -63,7 +69,7 @@ postButton.addEventListener("click", function(){
         listElement.appendChild(name)
         listElement.appendChild(text);
         document.getElementById("unordered").appendChild(listElement);
-        
+        //tyhjennetään vain kommentti-inputin sisältö, nimimerkki jää talteen
         commentBox.value = "";
         
 

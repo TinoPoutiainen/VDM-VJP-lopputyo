@@ -1,9 +1,9 @@
 
-
+// videot ja napit talteen NodeListeihin
 const videos = document.querySelectorAll('video');
 const buttons = document.querySelectorAll('.pause-play');
 
-// Function to toggle play and pause for a specific video
+// apufunktio videon pausettamiseen ja käynnistämiseen
 function pausePlay(video, button) {
     if (video.paused) {
     video.play();
@@ -14,7 +14,7 @@ function pausePlay(video, button) {
     }
 }
 
-// Add event listeners to all buttons
+// Lisätään kaikkiin nappeihin eventListener, joka suorittaa apufunktion oikealle videolle
 buttons.forEach((button, index) => {
     const video = videos[index];
     button.addEventListener('click', () => {
