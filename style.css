@@ -31,20 +31,11 @@ body{
  
     background-size: cover;
     z-index: 0;
-    margin: 0%;
+    margin: 0;
     filter: brightness(50%);
        
 }
-#border{
-    position: absolute;
-    transform: translate3d(-50%, -50%, 0);
-    width: 98%;
-    height: 98%;
-    top: 50%;
-    left: 50%;
-    /* border: 5px dashed #eee472; */
 
-}
 header{
     display: flex;
     position: absolute;
@@ -52,15 +43,15 @@ header{
     width: 100%;
     height: 10vw;
     
-    top: 0%;   
+    top: 0;   
 
 }
-#logo{
+.logo{
     display: flex;
     margin: 2vw;
     height: 8rem;
     width: 8rem;
-    /* opacity: 80%; */
+    
 
 }
 .title-background{
@@ -82,7 +73,7 @@ header{
     transform: translate3d(-50%, -50%, 0);
   
 }
-#main-title{
+.main-title{
     
     font-family: 'Bowlby One SC';
     font-size: 4rem;
@@ -91,16 +82,16 @@ header{
     border-bottom: 5px dashed white;
      
 }
-#sub-title{
+.sub-title{
     
     font-family: 'Bowlby One SC';
     white-space:nowrap;
     font-size: 4rem;
     
-    margin-top: 0px;
+    margin-top: 0;
      
 }
-#name{
+.name{
     
     font-family: 'Bowlby One SC';
     color: #FCD581;
@@ -112,7 +103,7 @@ header{
 .arrow{
     
     position: absolute;
-    bottom: 0%;
+    bottom: 0;
     left: 50%;
     height: 40px;
     width: 50px;
@@ -123,7 +114,7 @@ header{
     border: none;
     background-size: contain;
     transform: translate3d(-50%, -50%, 0);
-    opacity: 50%;
+    opacity: 50;
    
     animation: arrowAnimation ease 2s;
        
@@ -144,28 +135,26 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    /* background-color: #C8B3A7; */
-    background-image: linear-gradient(180deg, #C8B3A7, #b5a8a1 );   
+   
+    background-image: linear-gradient(180deg, #e1dddb, #f5d8d9 );   
 }
 
 .margin{
     display: flex;
     min-height: 200vh;
     width: 15vw;
-
     position: relative;
-    /* background-image: linear-gradient(180deg, #C8B3A7, #5E5958);    */
+    background-size: contain;
+    background-position: 25%;
+   
 }
-.bg-graphic{
-    mix-blend-mode: difference;
-    position: absolute;
-    
-    width: 80%;
-    right: 25%;
-    top:2%;
-    rotate: 40deg;
+#left{
+    background-image: url("pictures/background/bg_graphic3.png"); 
+}
+#right{
+    background-image: url("pictures/background/bg_graphic4.png"); 
+}
 
-}
 
 
 .main-view{
@@ -176,7 +165,7 @@ header{
     min-height: 200vh;
     box-shadow: 3px 3px 3px rgb(108, 108, 108);
     background-color: #FCD581;
-    margin-top: 0vw;
+    margin-top: 0;
     
 }
 #main-border{
@@ -185,8 +174,7 @@ header{
     align-self: center;
     height: 100%;
     width: 98%;
-    /* border-left: 3.5px dashed #e3990f ;
-    border-right: 3.5px dashed #e3990f ; */
+    
 
 }
 
@@ -195,7 +183,7 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 100%;
+    max-width: 100vw;
     
     animation: fadeInAnimation ease 1s;
     animation-iteration-count: 1;
@@ -219,7 +207,8 @@ button{
     color:  #5E5958;
 
     height: 3rem;
-    min-width: 6rem;
+    width: 8rem;
+    
     font-size: 1.2vw;
     margin: 2vw;
     border: none;
@@ -251,9 +240,7 @@ button{
         border: none;
      }
 }
-.menu-button{
-    
-}
+
 .menu-button:hover{
     animation: fadeBorderAnimation ease 0.3s;
     animation-iteration-count: 1;
@@ -279,7 +266,7 @@ button{
 .button-container{
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: flex-start;
     width: 100%;
     
     animation: fadeInAnimation ease 1s;
@@ -288,10 +275,7 @@ button{
 }
 .pause-play{
     align-self: flex-end;
-    justify-self: flex-end;
     margin: 0;
-
-   
 }
 
 .pause-play:hover{
@@ -299,15 +283,11 @@ button{
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
-
-
-
 .legend{
     display: flex;
     flex-direction: row;
     align-self: center;
     justify-content: center;
-    
     
     max-width: 90%;
     margin-bottom: 10vw;
@@ -345,7 +325,7 @@ button{
     
     
     font-family: 'League Spartan', sans-serif;
-    font-weight: 1000;
+    font-weight: 700;
     
     height: 40vw;
     width: 40vw;
@@ -393,7 +373,7 @@ button{
     background-repeat: no-repeat;
     background-size: cover;
 
-    transition: all .5s;
+    transition: all;
 
     
     box-shadow: 3px 3px 3px rgb(108, 108, 108);
@@ -444,10 +424,10 @@ footer{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* justify-content: space-between; */
+   
     min-height: 20vw;
     width: 100vw;
-    background-color: #b5a8a1;
+    background-color: #9b9b9b;
    
     margin: 0;
 }
@@ -537,14 +517,14 @@ h2{
         width: 100vw;
         align-items: center;  
     }
-    #main-title{
+    .main-title{
         font-size: 2.5rem;
     }
-    #sub-title{
+    .sub-title{
        
         font-size: 2.5rem;    
     }
-    #name{
+    .name{
         font-size: 2rem;
     }
     .main-view{
@@ -552,6 +532,7 @@ h2{
     }
    
     button{
+        min-width: 2rem;
         font-size: 2.3vw;
     }
     .legend{
@@ -581,15 +562,15 @@ h2{
 @media (max-width: 650px) {
     
     
-    #main-title{
+    .main-title{
         font-size: 1.5rem;
     }
-    #sub-title{
+    .sub-title{
        
         font-size: 1.5rem;  
     }
    
-    #name{
+    .name{
         font-size: 1.5rem;
     }
     
@@ -598,7 +579,7 @@ h2{
     }
    
     button{
-        font-size: 4.5vw;
+        font-size: 3vw;
     }
     #footer-content{
         flex-direction: column;

@@ -6,22 +6,24 @@
 
 
 
-#main-title{
+.main-title-sub{
+    font-family: 'Bowlby One SC';
+   
+    padding-bottom: 2rem;
+    border-bottom: 5px dashed white;
     font-size: 3rem;
     border: none;
     white-space: pre-wrap;
     min-width: 50vw;
 }
-#name{
+.name{
     font-size: 2.5rem;
 }
 .menu-buttons{
     justify-content: flex-start;
     
 }
-#post-button{
 
-}
 #post-button:hover{
     animation: fadeBorderAnimation ease 0.3s;
     animation-iteration-count: 1;
@@ -39,7 +41,7 @@
     
     max-width: 90%;
     margin-bottom: 10vw;
-    margin-top: 0vw; 
+    margin-top: 0; 
 }
 
 
@@ -68,20 +70,18 @@
         opacity: 100%;
     }
     100%{
-        opacity: 0%;
+        opacity: 0;
     }
 }
 @keyframes textFadeInAnimation{
     0%{
-        opacity: 0%;
+        opacity: 0;
     }
     100%{
         opacity: 100%;
     }
 }
-.bg{
-    
-}
+
 .text-container{
     display: flex;
     text-align: center;
@@ -96,7 +96,7 @@
 }
 .alt-text{
     color: white;
-    opacity: 0%;
+    opacity: 0;
     font-size: 3vw;
     animation: textFadeOutAnimation ease 1s;
     animation-iteration-count: 1;
@@ -121,12 +121,6 @@
 #bg6{
     background-image: url("pictures/Tips/tip6.png");
 }
-
-
-
-
-
-
 
 .comment-section{
     display: flex;
@@ -194,7 +188,7 @@ li{
     margin: 1vw;
     word-break: break-all;
     
-    border:     0.25rem dashed #e3990f;
+    border: 0.25rem dashed #e3990f;
     border-radius: 10px;
 
     
@@ -228,10 +222,10 @@ p{
         align-items: center;
         text-align: center;
     }
-    #main-title{
+    .main-title-sub{
         font-size: 2rem;
     }
-    #name{
+    .name{
         font-size: 2rem;
     }
     
@@ -256,10 +250,10 @@ p{
     }
 }
 @media (max-width: 650px) {
-    #main-title{
+    .main-title-sub{
         font-size: 1.5rem;
     }
-    #name{
+    .name{
         font-size: 1.5rem;
     }
     .menu-buttons{

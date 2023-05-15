@@ -19,59 +19,41 @@
     
     
     <section class="initial-view">
-        <div class="main-image" title="main-image" alt="bag-img">
-            <div id="border"></div>
-        </div>
-        <header> <img id="logo" src="pictures/logo.png" alt="logo"/></header>
-       
-
+        <div class="main-image" title="main-image" title="bag-img"></div>
+        <header> <img class="logo" src="pictures/logo.png" alt="logo"/></header>
         <div class="title-background">
-            <h1 id="main-title">KÄYTÄ LUOVUUTTA</h1>
-            <h4 id="sub-title">ÄLÄ RAHAA</h4>
-            <h4 id="name">#HARKITTUFITTI</h4>
+            <h1 class="main-title">KÄYTÄ LUOVUUTTA</h1>
+            <h4 class="sub-title">ÄLÄ RAHAA</h4>
+            <h4 class="name">#HARKITTUFITTI</h4>
         </div>
-       
         <div class="arrow"> </div>
     </section>
 
     <section class="initial-view-mobile">
-       
-            <div class="main-image" title="main-image" alt="bag-img">
-                <div id="border"></div>
-            </div>
-            
-           
-    
+            <div class="main-image" title="main-image" title="bag-img-mobile"></div>
             <div class="title-background">
-                <h1 id="main-title">KÄYTÄ LUOVUUTTA</h1>
-                <h4 id="sub-title">ÄLÄ RAHAA</h4>
-                <h4 id="name">#HARKITTUFITTI</h4>
-                <img id="logo" src="/pictures/logo.png" alt="logo"/>
+                <h1 class="main-title">KÄYTÄ LUOVUUTTA</h1>
+                <h4 class="sub-title">ÄLÄ RAHAA</h4>
+                <h4 class="name">#HARKITTUFITTI</h4>
+                <img class="logo" src="pictures/logo.png" alt="logo"/>
             </div>
-           
             <div class="arrow"> </div>
-        
     </section>
 
     <section class="content">
-        <section class="margin" id="left">
-            
-            
-            
-        </section>
+        <section class="margin" id="left"></section>
 
         <section class="main-view">
-
             <div id="main-border"></div>
             <div class="menu-buttons">
-                <button class="menu-button" id="vinkit" onclick="window.location.href='tips.html';">VINKIT</button>
-                <button class="menu-button" id="meistä" onclick="window.location.href='about.html';">MEISTÄ</button>
-                <button class="menu-button" id="meistä" onclick="window.location.href='videos.html';">VIDEOT</button>
-                <button class="menu-button" id="testi" onClick="document.getElementById('quiz').scrollIntoView();">TEE TESTI</button>
+                <button class="menu-button" id="tips-btn" onclick="window.location.href='tips.html';">VINKIT</button>
+                <button class="menu-button" id="about-btn" onclick="window.location.href='about.html';">MEISTÄ</button>
+                <button class="menu-button" id="videos-btn" onclick="window.location.href='videos.html';">VIDEOT</button>
+                <button class="menu-button" id="test-btn" onClick="document.getElementById('quiz').scrollIntoView();">TEE TESTI</button>
             </div>
             <section class="video-container">
                 <video class="video" id="main-video" poster="/pictures/poster_main.png">
-                    <source src="videos/VJP-VDM video.mp4" type="video/mp4">
+                    <source src="videos/VJP-VDM-video.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
                 <div class="button-container">
@@ -90,12 +72,12 @@
                 </p>
             </section>
 
-            <section>
+            <section class="lower-page">
                 <div class="text-menu">
 
                     <button class="container" id="watch-video" onclick="window.location.href='videos.html';">
                         <span class="bg" id="bg-wv">
-                            <p class="text">Katso Aalto-Yliopiston professorin vinkit pikamuodin välttämiseen</p>
+                            <span class="text">Katso Aalto-Yliopiston professorin vinkit pikamuodin välttämiseen</span>
                             <span class="border"></span>
                         </span>
                         
@@ -104,7 +86,7 @@
                     <button class="container" id="go-to-quiz" onClick="document.getElementById('quiz').scrollIntoView();">
                         
                         <span class="bg" id="bg-gtq">
-                            <p class="text">Testaa, millainen muodin kuluttaja olet</p>
+                            <span class="text">Testaa, millainen muodin kuluttaja olet</span>
                             <span class="border"></span>
                         </span>
                         
@@ -113,7 +95,7 @@
                     <button class="container" id="go-to-tips" onclick="window.location.href='tips.html';">
                         
                         <span class="bg" id="bg-gtt">
-                            <p class="text">Selaa tyylivinkkejä ja inspiroidu</p>
+                            <span class="text">Selaa tyylivinkkejä ja inspiroidu</span>
                             <span class="border"></span>
                         </span>
                         
@@ -149,21 +131,22 @@
                     </div>
                 </div>
             </section>
+
+
+
+
+            
         </section>
 
         <section class="margin" id="right"></section>
-
+        
     </section>
-
-
-
-    
     <footer>
         
         <div id="footer-content">
             <div id="logo-container">
                 <h2 id="footer-text">Yhteistyössä:</h2>
-                <img id="kl-logo" src="/pictures/kuluttajaliitto.png" alt="kuluttajaliitto_logo"/>
+                <img id="kl-logo" src="pictures/kuluttajaliitto.png" alt="kuluttajaliitto_logo"/>
             </div>
         
 
@@ -174,7 +157,11 @@
                 
             </div>
         </div>
-        <img id="footer-logo" src="/pictures/logo.png" alt="logo"/>
+        <img id="footer-logo" src="pictures/logo.png" alt="logo"/>
     </footer>
+
+
+    
+    
 </body>
 </html>
