@@ -1,3 +1,18 @@
+.main-title-sub{
+    font-family: 'Bowlby One SC';
+   
+    padding-bottom: 2rem;
+    border-bottom: 5px dashed white;
+    font-size: 3rem;
+    border: none;
+    white-space: pre-wrap;
+    min-width: 50vw;
+}
+.name{
+    font-size: 2.5rem;
+}
+
+
 .videos{
     display: flex;
     flex-direction: column;
@@ -64,5 +79,28 @@
         font-size: 2.5vw;
     }
    
-}
+    .title-background{
+        top:35%;
+        left: 50%;
+        width: 100vw;
+        align-items: center;
+        text-align: center;
+    }
+    .main-title-sub{
+        font-size: 2rem;
+    }
+    .name{
+        font-size: 2rem;
+    }
 
+}
+@media (max-width: 650px) {
+    .main-title-sub{
+        font-size: 1.5rem;
+    }
+    .name{
+        font-size: 1.5rem;
+    }
+  
+
+}
