@@ -2,92 +2,92 @@
 
 var questions = [
 	{
-		question: "How much do you enjoy spending time with friends?",
+		question: "Kuinka usein ostat keskimäärin uusia vaatteita?",
 		answers: [
-			{ answer: "Not at all", score: 1 },
-			{ answer: "A little bit", score: 2 },
-			{ answer: "Moderately", score: 3 },
+			{ answer: "Usein", score: 1 },
+			{ answer: "Joskus", score: 2 },
+			{ answer: "Harvoin", score: 3 },
 			
 		]
 	},
 	{
-		question: "How often do you exercise?",
+		question: "Millaisessa tilanteessa ostat uusia vaatteita?",
 		answers: [
-			{ answer: "Never", score: 1 },
-			{ answer: "Rarely", score: 2 },
-			{ answer: "Sometimes", score: 3 },
+			{ answer: "Uusien trendien saapuessa", score: 1 },
+			{ answer: "Spontaanist", score: 2 },
+			{ answer: "Tarpeeseen", score: 3 },
 			
 		]
 	},
 	{
-		question: "How often do you exercise?",
+		question: "Mistä hankit useimmat vaatteesi?",
 		answers: [
-			{ answer: "Never", score: 1 },
-			{ answer: "Rarely", score: 2 },
-			{ answer: "Sometimes", score: 3 },
+			{ answer: "Kaupoista tai netistä", score: 1 },
+			{ answer: "Käytettynä", score: 2 },
+			{ answer: "Lainaan muiden", score: 3 },
 			
 		]
 	},
 	{
-		question: "How often do you exercise?",
+		question: "Mihin kiinnität eniten huomiota ostopäätöstä tehdessäsi?",
 		answers: [
-			{ answer: "Never", score: 1 },
-			{ answer: "Rarely", score: 2 },
-			{ answer: "Sometimes", score: 3 },
+			{ answer: "Hintaan", score: 1 },
+			{ answer: "Brändiin", score: 2 },
+			{ answer: "Materiaaleihin", score: 3 },
 			
 		]
 	},
 	{
-		question: "How often do you exercise?",
+		question: "Tarvitset juhliin asun, eikä vaatekaapistasi löydy mitään sopivaa. Ostatko tällöin uusia vaatteita?",
 		answers: [
-			{ answer: "Never", score: 1 },
-			{ answer: "Rarely", score: 2 },
-			{ answer: "Sometimes", score: 3 },
+			{ answer: "Usein", score: 1 },
+			{ answer: "Joskus", score: 2 },
+			{ answer: "Harvoin", score: 3 },
 			
 		]
 	},
 	{
-		question: "How often do you exercise?",
+		question: "Lainaatko vaatteita ystäviltä tai tutuilta?",
 		answers: [
-			{ answer: "Never", score: 1 },
-			{ answer: "Rarely", score: 2 },
-			{ answer: "Sometimes", score: 3 },
+			{ answer: "Usein", score: 3 },
+			{ answer: "Joskus", score: 2 },
+			{ answer: "Harvoin", score: 1 },
 			
 		]
 	},
 	{
-		question: "How often do you exercise?",
+		question: "Onko vaatteiden ekologisuudella sinulle väliä?",
 		answers: [
-			{ answer: "Never", score: 1 },
-			{ answer: "Rarely", score: 2 },
-			{ answer: "Sometimes", score: 3 },
+			{ answer: "Ei juurikaan", score: 1 },
+			{ answer: "Osittain", score: 2 },
+			{ answer: "Paljon", score: 3 },
 			
 		]
 	},
 	{
-		question: "How often do you exercise?",
+		question: "Mitä haluat vaatteidesi edustavan?",
 		answers: [
-			{ answer: "Never", score: 1 },
-			{ answer: "Rarely", score: 2 },
-			{ answer: "Sometimes", score: 3 },
+			{ answer: "Ajankohtaisia trendejä", score: 1 },
+			{ answer: "Käytännöllisyyttä", score: 2 },
+			{ answer: "Omaa tyyliä", score: 3 },
 			
 		]
 	},
 	{
-		question: "How often do you exercise?",
+		question: "Seuraatko vaatetrendejä?",
 		answers: [
-			{ answer: "Never", score: 1 },
-			{ answer: "Rarely", score: 2 },
-			{ answer: "Sometimes", score: 3 },
+			{ answer: "Usein", score: 3 },
+			{ answer: "Joskus", score: 2 },
+			{ answer: "Harvoin", score: 1 },
 			
 		]
 	},
 	{
-		question: "How often do you exercise?",
+		question: "Kiinnitätkö huomiota vaatteidesi huoltoon?",
 		answers: [
-			{ answer: "Never", score: 1 },
-			{ answer: "Rarely", score: 2 },
-			{ answer: "Sometimes", score: 3 },
+			{ answer: "Melko vähän", score: 1 },
+			{ answer: "Jonkin verran", score: 2 },
+			{ answer: "Paljon", score: 3 },
 			
 		]
 	},
@@ -180,18 +180,16 @@ function showResult() {
     resultElement.style.display = "flex";
 
 
-
+	console.log(currentScore);
     //mahd. lopputekstit
 	var resultText;
-	if (currentScore <= 5) {
-		resultText = "You are not very social and don't enjoy spending time with others.";
-	} else if (currentScore <= 10) {
-		resultText = "You are somewhat social and like to spend time with others occasionally.";
-	} else if (currentScore <= 15) {
-		resultText = "You are fairly social and enjoy spending time with others frequently.";
+	if (currentScore < 18) {
+		resultText = "Pidät vaatetrendien seuraamisesta ja pukeutumisessa sen helppous on sinulle merkittävää. Vaatekaappisi sisältö vaihtuu kohtuullisen tiuhaan ja ostat mielellään vaatteesi uutena. Haasta itsesi viettämään päivä second hand-liikkeissä tai tuttavan vaatekaapilla; uniikin aarteen löytäminen voi tuoda yllättävän paljon mielihyvää pitkäksikin ajaksi.";
+	} else if (18 <= currentScore && currentScore < 23) {
+		resultText = "Olet eräänlainen keskitien kuluttaja, jonka vaatekaapista löytyy niin uutta kuin vanhaa. Pukeutuminen on sinulle enemmänkin käytännöllisyyden asia, mutta toisinaan mukaasi tarttuu huomiosi kiinnittäneitä vaatteita spontaanisti niin nettikaupasta kuin kivijalkaliikkeen vaaterekistä. Mitäpä jos kertoisitkin vaatteidesi avulla tarinaa? Käytännöllisyys ja tarinan kertominen voi olla yllättävän helppoa ja palkitsevaa yhdistää.";
 	} else {
-		resultText = "You are very social and enjoy spending time with others almost all the time.";
+		resultText = "Sinulle vaatteet edustavat tarinaa, jota muovaat hellästi ja huolellisesti. Huollat vaatteitasi ja ostat niitä tarpeen mukaan. Myös vaatteiden ekologisuudella on sinulle väliä. Inspiroidut ja hyödynnät tuttaviesi vaatekaappeja osana pukeutumistasi. Mitä jos järjestäisitte yhdessä vaatteiden vaihtoillan? ";
 	}
-
+	
 	resultElement.innerText = resultText;
 }

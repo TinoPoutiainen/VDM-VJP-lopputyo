@@ -35,14 +35,14 @@
     justify-content: center;
 }
 
-.legend{
+/* .legend{
     display: flex;
     flex-direction: column;
     
     max-width: 90%;
     margin-bottom: 10vw;
     margin-top: 0; 
-}
+} */
 
 
 
@@ -195,7 +195,7 @@ li{
 }
 p{
     display: flex;
-    width: 38vw;
+    
 
     color: #5E5958;
     font-size: 1.5vw;
@@ -274,7 +274,8 @@ p{
     }
     p{
         font-size: 4vw;
-        width: 58vw;
+        /* width: 58vw; */
+
     }
     #comment-intro{
         font-size: 4vw;
