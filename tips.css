@@ -122,7 +122,7 @@
     background-image: url("pictures/Tips/tip6.png");
 }
 
-.comment-section{
+/* .comment-section{
     display: flex;
     flex-direction: column;
     
@@ -211,7 +211,7 @@ p{
     text-align: center;
     font-size: 2vw;
    
-}
+} */
 
 @media (max-width:1100px) {
 
@@ -229,7 +229,7 @@ p{
         font-size: 2rem;
     }
     
-
+/* 
     #comment-box{
         font-size: 2vw;
     }
@@ -247,7 +247,7 @@ p{
     p{
         font-size: 2vw;
        
-    }
+    } */
 }
 @media (max-width: 650px) {
     .main-title-sub{
@@ -262,7 +262,7 @@ p{
     }
 
 
-    #comment-box{
+    /* #comment-box{
         font-size: 4vw;
     }
     #name-box{
@@ -274,11 +274,11 @@ p{
     }
     p{
         font-size: 4vw;
-        /* width: 58vw; */
+        
 
     }
     #comment-intro{
         font-size: 4vw;
-    }
+    } */
 
 }

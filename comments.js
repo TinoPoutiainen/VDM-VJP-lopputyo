@@ -18,6 +18,7 @@ function checkProfanity(word){
     return profanities.includes(word);
 }
 
+// lähetä-napin toiminnallisuus:
 postButton.addEventListener("click", function(){
     
     var commentBoxValue = commentBox.value;
@@ -62,12 +63,16 @@ postButton.addEventListener("click", function(){
         
         var name = document.createElement("p");
         var text = document.createElement("p");
-        
+        var removeButton = document.createElement("button");
+        removeButton.classList.add("remove-button");
+
         name.innerHTML = nameBoxValue
         text.innerHTML = commentBoxValue
+        removeButton.textContent = "Poista"
 
         listElement.appendChild(name)
         listElement.appendChild(text);
+        listElement.appendChild(removeButton);
         document.getElementById("unordered").appendChild(listElement);
         //tyhjennetään vain kommentti-inputin sisältö, nimimerkki jää talteen
         commentBox.value = "";
@@ -81,3 +86,15 @@ postButton.addEventListener("click", function(){
 
  
 });
+
+
+// kommentin poiston toiminnallisuus
+let list = document.getElementById("unordered");
+
+list.addEventListener("click", function (event) {
+    // tarkistetaan, onko klikattu poista-nappia
+    if (event.target.classList.contains("remove-button")) {
+      // poistetaan löydetyn napin parent-elementti
+      const commentItem = event.target.parentNode;
+      commentItem.remove();
+    }})
