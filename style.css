@@ -408,15 +408,17 @@ tekstisisältö */
 }
 
 /* taustakuvat */
-
-#bg-wv{
-    background-image: url("pictures/Tips/tip1.png");   
-}
 #bg-gtq{
-    background-image: url("pictures/Tips/tip3.png");
+    background-image: url("pictures/Tips/tip2.png");
+}
+#bg-wv{
+    background-image: url("pictures/Tips/tip4.png");   
 }
 #bg-gtt{
     background-image: url("pictures/Tips/tip6.png"); 
+}
+#bg-gtm{
+    background-image: url("pictures/Tips/tip5.png"); 
 }
 /* footer */
 footer{
@@ -427,7 +429,7 @@ footer{
    
     min-height: 20vw;
     width: 100vw;
-    background-color: #9b9b9b;
+    background-color: #C8B3A7;
    
     margin: 0;
 }
@@ -476,9 +478,18 @@ h2{
     width: 4vw;
       
 }
+.icon-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
 
+}
 #icon-instagram{
     background-image: url("pictures/instagram_logo.png");
+}
+#icon-tiktok{
+    background-image: url("pictures/tiktok_logo.png");
 }
 #footer-logo{
     display: flex;
@@ -617,5 +628,8 @@ h2{
     .icon{
         height: 10vw;
         width: 10vw;     
+    }
+    .icon-container{
+        width: 100%;
     }
 }
