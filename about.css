@@ -1,3 +1,6 @@
+
+/* alkunäkymän asetukset */
+
 .main-view{
     height: 100vh;
 }
@@ -17,9 +20,12 @@
 .name{
     font-size: 2.5rem;
 }
-/* a{
-    z-index: 10;
-} */
+.menu-buttons{
+    justify-content: flex-start;
+    width: 90%;
+}
+
+
 .legend{
     z-index: 100;
 }
@@ -46,6 +52,9 @@
     .name{
         font-size: 1.5rem;
     }
-  
+    .menu-buttons{
+        justify-content: center;
+       
+    }
 
 }

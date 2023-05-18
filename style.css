@@ -7,11 +7,13 @@ body{
     display: flex;
     flex-direction: column;
     min-width: 100px;
-    /* max-width: 2500px; */
     min-height: 100vh;
     margin: 0;
     
 }
+
+
+/* alkunäkymä */
 
 .initial-view{
     
@@ -115,22 +117,10 @@ header{
     background-size: contain;
     transform: translate3d(-50%, -50%, 0);
     opacity: 50;
-   
-    animation: arrowAnimation ease 2s;
-       
-}
-@keyframes arrowAnimation {
-    
-    0% {
-       
-        opacity: 0;
-    }
-    100% {
-       
-        opacity: 0.5;
-     }
 }
 
+
+/* sisältönäkymä */
 .content{
     display: flex;
     flex-direction: row;
@@ -157,6 +147,7 @@ header{
 
 
 
+
 .main-view{
     display: flex;
     flex-direction: column;
@@ -168,16 +159,7 @@ header{
     margin-top: 0;
     
 }
-#main-border{
-    display: flex;
-    position: absolute;
-    align-self: center;
-    height: 100%;
-    width: 98%;
-    
-
-}
-
+/* menu */
 .menu-buttons{
     
     display: flex;
@@ -191,14 +173,6 @@ header{
 }
 
 
-@keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-     }
-}
 
 
 button{
@@ -225,14 +199,14 @@ button{
         
     }
     100% {
-        border: 3.5px dashed #e3990f ;
+        border: 3px dashed #e3990f ;
         border-radius: 6px;
      }
 }
 @keyframes fadeBorderOutAnimation {
     0% {
-        border: 3.5px dashed #e3990f ;
-        border-radius: 6px;
+        border: 1px dashed #e3990f ;
+        border-radius: 3px;
         
         
     }
@@ -247,6 +221,20 @@ button{
     animation-fill-mode: forwards;
 }
 
+/* takaisin-nappi (muita kuin pääsivua varten) */
+#back{
+    animation: none;
+    margin-left: 0;
+    padding: 0;
+}
+#back:hover{
+    opacity: 40%;
+}
+
+
+
+
+/* video ja sen kontrollit */
 .video-container{
     display: flex;
     flex-direction: column;
@@ -283,6 +271,9 @@ button{
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
+
+/* 
+tekstisisältö */
 .legend{
     display: flex;
     flex-direction: row;
@@ -307,6 +298,8 @@ button{
     margin: 0;
    
 }
+
+/* Kuvallinen menu */
 .text-menu{
     display: flex;
     flex-direction: column;
@@ -382,6 +375,7 @@ button{
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
+/* menun animaatiot */
 @keyframes zoomInAnimation {
     0% {
         background-size: 100%;
@@ -398,6 +392,9 @@ button{
         background-size: 100%;
      }
 }
+
+/* nappien borderit */
+
 .border{
     display: flex;
     position: absolute;
@@ -407,9 +404,10 @@ button{
     border: 0.25rem dashed #e3990f;
     border-radius: 10px;
     transform-origin: 50%;
-      
-
 }
+
+/* taustakuvat */
+
 #bg-wv{
     background-image: url("pictures/Tips/tip1.png");   
 }
@@ -419,6 +417,7 @@ button{
 #bg-gtt{
     background-image: url("pictures/menu_bg3.png"); 
 }
+/* footer */
 footer{
     display: flex;
     flex-direction: column;
@@ -488,12 +487,13 @@ h2{
     width: 10vw;
   
 }
-
+/* mobiilinäkymän alkustate */
 .initial-view-mobile{
     display: none;
 }
 
 @media (max-width:1100px) {
+    /* mobiili/tablettinäkymään siirtyminen */
     .initial-view{
         display: none;
     }
@@ -581,6 +581,7 @@ h2{
     button{
         font-size: 3vw;
     }
+    
     #footer-content{
         flex-direction: column;
     }
@@ -595,12 +596,8 @@ h2{
     #kl-logo{
         height: 15vw;    
     }
-    
-    
     .icon{
-      
         height: 10vw;
-        width: 10vw;
-          
+        width: 10vw;     
     }
 }
