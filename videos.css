@@ -1,6 +1,10 @@
 
 /* alkunäkymä */
 
+
+#main-videos{
+    background-image:  url("pictures//poster_main.png");
+}
 .main-title-sub{
     font-family: 'Bowlby One SC';
    
@@ -115,7 +119,7 @@
         font-size: 1.5rem;
     }
     button{
-        width: 4rem;
+        width: 6rem;
         height: 2rem;
     }
     .menu-buttons{

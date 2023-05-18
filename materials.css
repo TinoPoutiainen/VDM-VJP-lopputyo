@@ -1,13 +1,7 @@
 
 /* alkunäkymän asetukset */
-#main-about{
-    background-image:  url("pictures/poster_main.png");
-}
-.main-view{
-    height: 100vh;
-}
-.margin{
-    height: 100vh;
+#main-tips{
+    background-image:  url("pictures/tips_header_pic.png"); 
 }
 .main-title-sub{
     font-family: 'Bowlby One SC';
@@ -28,10 +22,35 @@
 }
 
 
-.legend{
-    z-index: 100;
+/* faktat */
+.content{
+
+    justify-content: center;
 }
+.fact-container{
+    display: flex;
+    flex-direction: column;
+    
+    padding: 20px;
+border: 0.25rem dashed #e3990f;
+border-radius: 10px;
+
+margin-bottom: 10vw;
+}
+.material-pic{
+    display: flex;
+margin-bottom: 1vw;
+margin-top: 1vw;
+
+
+width: 40vw;
+height: 40vw;
+}
+
+
+
 @media (max-width:1100px) {
+
     .title-background{
         top:35%;
         left: 50%;
@@ -45,7 +64,7 @@
     .name{
         font-size: 2rem;
     }
-
+    
 }
 @media (max-width: 650px) {
     .main-title-sub{
@@ -56,7 +75,13 @@
     }
     .menu-buttons{
         justify-content: center;
-       
+        margin: 4vw;
+    }
+    .material-pic{
+        margin-bottom: 5vw;
+margin-top: 5vw;
+width: 70vw;
+height: 70vw;
     }
 
 }

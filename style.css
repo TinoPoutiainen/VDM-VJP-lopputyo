@@ -24,7 +24,7 @@ body{
 .main-image{
     
     position: absolute;
-    background-image:  url("pictures/vdm-header-pic.png");
+    background-image:  url("pictures/tips_header_pic.png");
     background-attachment: fixed;
     
     background-position: 50%;
@@ -126,9 +126,9 @@ header{
     flex-direction: row;
     justify-content: center;
    
-    background-image: linear-gradient(180deg, #e1dddb, #f5d8d9 );   
+    background-image: linear-gradient(180deg, #e1dddb, #F3C6C6 );   
 }
-
+/* #f5d8d9 */
 .margin{
     display: flex;
     min-height: 200vh;
@@ -181,7 +181,7 @@ button{
     color:  #5E5958;
 
     height: 3rem;
-    width: 8rem;
+    width: 9rem;
     
     font-size: 1.2vw;
     margin: 2vw;
@@ -224,6 +224,7 @@ button{
 /* takaisin-nappi (muita kuin pääsivua varten) */
 #back{
     animation: none;
+    margin-top: 5vw;
     margin-left: 0;
     padding: 0;
 }
@@ -412,10 +413,10 @@ tekstisisältö */
     background-image: url("pictures/Tips/tip1.png");   
 }
 #bg-gtq{
-    background-image: url("pictures/menu_bg2.png");
+    background-image: url("pictures/Tips/tip3.png");
 }
 #bg-gtt{
-    background-image: url("pictures/menu_bg3.png"); 
+    background-image: url("pictures/Tips/tip6.png"); 
 }
 /* footer */
 footer{
@@ -573,7 +574,9 @@ h2{
     .name{
         font-size: 1.5rem;
     }
-    
+    .menu-buttons{
+        flex-direction: column;
+    }
     .button-container{
         justify-content: center;
     }

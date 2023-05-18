@@ -35,7 +35,7 @@
     align-items: center;
     
     max-width: 90%;
-    margin-bottom: 10vw;
+    /* margin-bottom: 10vw; */
     margin-top: 4vw;
 
     animation: fadeInAnimation ease 2s;
