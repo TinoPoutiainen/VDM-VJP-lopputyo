@@ -14,7 +14,7 @@ var questions = [
 		question: "Millaisessa tilanteessa ostat uusia vaatteita?",
 		answers: [
 			{ answer: "Uusien trendien saapuessa", score: 1 },
-			{ answer: "Spontaanist", score: 2 },
+			{ answer: "SpontaanistI", score: 2 },
 			{ answer: "Tarpeeseen", score: 3 },
 			
 		]
