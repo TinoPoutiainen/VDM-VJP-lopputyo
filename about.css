@@ -1,7 +1,10 @@
 
 /* alkunäkymän asetukset */
 #main-about{
-    background-image:  url("pictures/poster_main.png");
+    background-image:  url("pictures/header_pic_humans.png");
+}
+#main-about-mobile{
+    background-image:  url("pictures/header_pic_humans.png");
 }
 .main-view{
     height: 100vh;
@@ -45,6 +48,9 @@
     .name{
         font-size: 2rem;
     }
+    #main-about-mobile{
+        background-position: 50%;
+    }
 
 }
 @media (max-width: 650px) {
@@ -58,5 +64,6 @@
         justify-content: center;
        
     }
+  
 
 }

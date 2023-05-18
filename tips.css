@@ -1,7 +1,10 @@
 
 /* alkunäkymän asetukset */
 #main-tips{
-    background-image:  url("pictures/tips_header_pic.png"); 
+    background-image:  url("pictures/header_pic_veera.png"); 
+}
+#main-tips-mobile{
+    background-image:  url("pictures/header_pic_veera.png");
 }
 .main-title-sub{
     font-family: 'Bowlby One SC';
@@ -111,7 +114,9 @@
 
 
 @media (max-width:1100px) {
-
+    #main-tips-mobile{
+        background-position: 50%;
+    }
     .title-background{
         top:35%;
         left: 50%;

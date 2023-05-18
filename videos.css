@@ -3,7 +3,10 @@
 
 
 #main-videos{
-    background-image:  url("pictures//poster_main.png");
+    background-image:  url("pictures/poster_main.png");
+}
+#main-videos-mobile{
+    background-image:  url("pictures/poster_main.png");
 }
 .main-title-sub{
     font-family: 'Bowlby One SC';
