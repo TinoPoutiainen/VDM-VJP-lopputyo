@@ -10,8 +10,9 @@
     <script src="main.js" defer></script>
     <script src="quiz.js" defer></script>
     <script src="background.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=League+Spartan:wght@500&display=swap" rel="stylesheet">
+    <link rel="icon" href="/pictures/logo.png" type="image">
     
-    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=League+Spartan:wght@500&family=Inter:wght@700&family=Syne&family=Rubik+Mono+One&family=Koulen&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -49,15 +50,16 @@
                 <button class="menu-button" id="tips-btn" onclick="window.location.href='tips.html';">VINKIT</button>
                 <button class="menu-button" id="about-btn" onclick="window.location.href='about.html';">MEISTÄ</button>
                 <button class="menu-button" id="videos-btn" onclick="window.location.href='videos.html';">VIDEOT</button>
-                <button class="menu-button" id="test-btn" onClick="document.getElementById('quiz').scrollIntoView();">TEE TESTI</button>
+                <button class="menu-button" id="videos-btn" onclick="window.location.href='materials.html';">YMPÄRISTÖ</button>
+                <!-- <button class="menu-button" id="test-btn" onClick="document.getElementById('quiz').scrollIntoView();">TEE TESTI</button> -->
             </div>
             <section class="video-container">
-                <video class="video" id="main-video" poster="/pictures/poster_main.png">
+                <video class="video" id="main-video" controls poster="/pictures/Posters/poster_main.png">
                     <source src="videos/VJP-VDM-video.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
                 <div class="button-container">
-                    <button class="pause-play" onclick="pauseVideo()">
+                    <button class="pause-play">
                         TOISTA
                     </button>
                 </div>
@@ -75,13 +77,8 @@
             <section class="lower-page">
                 <div class="text-menu">
 
-                    <button class="container" id="watch-video" onclick="window.location.href='videos.html';">
-                        <span class="bg" id="bg-wv">
-                            <span class="text">Katso Aalto-Yliopiston professorin vinkit pikamuodin välttämiseen</span>
-                            <span class="border"></span>
-                        </span>
-                        
-                    </button>
+
+
 
                     <button class="container" id="go-to-quiz" onClick="document.getElementById('quiz').scrollIntoView();">
                         
@@ -91,6 +88,17 @@
                         </span>
                         
                     </button>
+
+
+                    <button class="container" id="watch-video" onclick="window.location.href='videos.html';">
+                        <span class="bg" id="bg-wv">
+                            <span class="text">Katso Aalto-Yliopiston professorin vinkit pikamuodin välttämiseen</span>
+                            <span class="border"></span>
+                        </span>
+                        
+                    </button>
+
+                
 
                     <button class="container" id="go-to-tips" onclick="window.location.href='tips.html';">
                         
