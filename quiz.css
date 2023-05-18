@@ -28,13 +28,7 @@
     margin-bottom: 5vw;
 }
 #question-container{
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-width: 40vw;
-    animation: fadeInAnimation ease 2s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;  */
+   
     
     display: flex;
     flex-direction: column;
@@ -50,17 +44,7 @@
 }
 
 #question{
-    /* display: flex;
-
-    justify-content: center;
-    max-width: 100%;
-    font-family: 'League Spartan', sans-serif;
-    font-size: 2vw;
-    color:  #5E5958;
-    padding: 20px;
-    border: 0.25rem dashed #e3990f;
-    border-radius: 10px;
-    white-space:nowrap; */
+   
     min-width: 40vw;
     color: #5E5958;
     font-size: 2vw;
@@ -77,6 +61,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 2vw ;
     max-width: 70%;
     align-self: center;
 }
@@ -168,6 +153,10 @@
    }
 }
 @media (max-width: 650px) {
-    
+    .answer-button{
+        width: 12rem;
+        min-height: 3rem;
+        font-size: 3.5vw;
+    }
     
 }

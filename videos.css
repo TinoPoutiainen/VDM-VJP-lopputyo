@@ -1,3 +1,6 @@
+
+/* alkunäkymä */
+
 .main-title-sub{
     font-family: 'Bowlby One SC';
    
@@ -12,6 +15,14 @@
     font-size: 2.5rem;
 }
 
+
+.menu-buttons{
+    justify-content: flex-start;
+    width: 90%;
+}
+
+
+/* videot */
 
 .videos{
     display: flex;
@@ -39,6 +50,8 @@
     margin-right: 2vw;
     margin-bottom: 0;
 }
+
+/* teksti + nappi majailevat täällä */
 .side-content{
     display: flex;
     flex-direction: column;
@@ -101,6 +114,13 @@
     .name{
         font-size: 1.5rem;
     }
-  
+    button{
+        width: 4rem;
+        height: 2rem;
+    }
+    .menu-buttons{
+        justify-content: center;
+       
+    }
 
-}
+} 

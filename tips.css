@@ -1,11 +1,8 @@
 
-
+/* alkunäkymän asetukset */
 #main-tips{
     background-image:  url("pictures/tips_header_pic.png"); 
 }
-
-
-
 .main-title-sub{
     font-family: 'Bowlby One SC';
    
@@ -21,8 +18,10 @@
 }
 .menu-buttons{
     justify-content: flex-start;
-    
+    width: 90%;
 }
+
+
 
 #post-button:hover{
     animation: fadeBorderAnimation ease 0.3s;
@@ -30,23 +29,11 @@
     animation-fill-mode: forwards;
 }
 
+/* vinkit */
 .content{
 
     justify-content: center;
 }
-
-/* .legend{
-    display: flex;
-    flex-direction: column;
-    
-    max-width: 90%;
-    margin-bottom: 10vw;
-    margin-top: 0; 
-} */
-
-
-
-
 
 .container:hover .text,
 .container:focus .text {
@@ -64,7 +51,7 @@
 
 }
 
-
+/* vinkkien animaatiot */
 @keyframes textFadeOutAnimation{
     0%{
         opacity: 100%;
@@ -102,7 +89,7 @@
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
-
+/* vinkkiboxien animaatiot */
 #bg1{
     background-image: url("pictures/Tips/tip1.png");
 }
@@ -122,96 +109,6 @@
     background-image: url("pictures/Tips/tip6.png");
 }
 
-/* .comment-section{
-    display: flex;
-    flex-direction: column;
-    
-    
-    max-height: 100%;
-    align-items: center;
-    text-align: center;
-    
-    margin-bottom: 5vw;
-}
-
-.inputs{
-    display: flex;
-    flex-direction: column;
-    align-items: center ;
-}
-
-.input-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.input-element{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 1vw;
-}
-
-#comment-box{
-    border: none;
-    font-size: 1.2vw;
-    width: 40vw;
-    
-}
-#name-box{
-    border: none;
-    font-size: 1.2vw;
-}
-
-.error-text{
-    display: none;
-    text-align: center;
-}
-#unordered{
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    width: 100%;
-}
-ul{
-    list-style: none;
-}
-li{
-    display: flex;
-    flex-direction: column;
-    
-    width: 40vw;
-    text-align:start;
-   
-    
-    background-color: bisque;
-    margin: 1vw;
-    word-break: break-all;
-    
-    border: 0.25rem dashed #e3990f;
-    border-radius: 10px;
-
-    
-}
-p{
-    display: flex;
-    
-
-    color: #5E5958;
-    font-size: 1.5vw;
-    font-family: 'League Spartan', sans-serif;
-
-    margin: 1vw;
-    
-    
-    
-}
-#comment-intro{
-    display: flex;
-    text-align: center;
-    font-size: 2vw;
-   
-} */
 
 @media (max-width:1100px) {
 
@@ -229,25 +126,6 @@ p{
         font-size: 2rem;
     }
     
-/* 
-    #comment-box{
-        font-size: 2vw;
-    }
-    #name-box{
-        font-size: 2vw;
-    }
-
-
-    li{
-        border-width:0.5vw;
-    }
-    #comment-intro{
-        font-size: 3vw;
-    }
-    p{
-        font-size: 2vw;
-       
-    } */
 }
 @media (max-width: 650px) {
     .main-title-sub{
@@ -260,25 +138,5 @@ p{
         justify-content: center;
         margin: 4vw;
     }
-
-
-    /* #comment-box{
-        font-size: 4vw;
-    }
-    #name-box{
-        font-size: 4vw;
-    }
-    li{
-        
-        width: 60vw;
-    }
-    p{
-        font-size: 4vw;
-        
-
-    }
-    #comment-intro{
-        font-size: 4vw;
-    } */
 
 }
